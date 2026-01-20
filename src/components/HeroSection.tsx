@@ -35,7 +35,7 @@ const HeroSection = () => {
 
           {/* CTA Button - Crimson border */}
           <div>
-            <button onClick={scrollToWork} className="px-6 py-6 bg-transparent border rounded-md font-medium hover:bg-[#731826] hover:text-white transition-all duration-300 text-[#731826] border-[#731826] leading-none">
+            <button onClick={scrollToWork} className="px-6 py-4 bg-transparent border rounded-md font-medium hover:bg-[#731826] hover:text-white transition-all duration-300 text-[#731826] border-[#731826] leading-none">
               View My Work
             </button>
           </div>
@@ -93,14 +93,14 @@ const HeroSection = () => {
               <div className="h-px w-full bg-gray-400"></div>
               <div className="absolute left-0 h-1.5 w-px bg-gray-400 -top-0.5"></div>
               <div className="absolute right-0 h-1.5 w-px bg-gray-400 -top-0.5"></div>
-              <span className="absolute bg-[#fdfbf7] px-1 text-[9px] text-gray-500 font-medium">24px</span>
+              <span className="absolute px-1 text-[9px] text-gray-500 font-medium">12px</span>
             </div>
             {/* Vertical 24px */}
             <div className="absolute -right-3 top-0 h-full flex items-center justify-center">
               <div className="w-px h-full bg-gray-400"></div>
               <div className="absolute top-0 w-1.5 h-px bg-gray-400 -left-0.5"></div>
               <div className="absolute bottom-0 w-1.5 h-px bg-gray-400 -left-0.5"></div>
-              <span className="absolute bg-[#fdfbf7] px-1 text-[9px] text-gray-500 font-medium rotate-90">24px</span>
+              <span className="absolute px-1 text-[9px] text-gray-500 font-medium rotate-90">24px</span>
             </div>
           </div>
 
