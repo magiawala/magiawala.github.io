@@ -57,7 +57,7 @@ const VerizonCaseStudy = () => {
               ⚡️ The Challenge:
             </h3>
             <p className="text-lg md:text-xl text-foreground font-medium mb-6">
-              How can we leverage AI to help sales teams find the right solutions for customers faster?
+              How might we help sales reps effectively recommend business solutions to smb customers and meet their needs?
             </p>
           </div>
           <p className="body-text">
