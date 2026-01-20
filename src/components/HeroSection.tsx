@@ -10,7 +10,7 @@ const HeroSection = () => {
       behavior: "smooth"
     });
   };
-  return <section className="min-h-screen flex items-center justify-center px-6 md:px-12 lg:px-16">
+  return <section className="min-h-screen flex items-start justify-center px-6 md:px-12 lg:px-16 pt-20 md:pt-28">
     <div className="w-full max-w-4xl mx-auto">
       {/* Wrapper for hover effect */}
       <div className="relative inline-block p-10" onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
@@ -70,7 +70,7 @@ const HeroSection = () => {
           {/* Padding Indicators */}
           <div className="absolute h-[40px]" style={{
             top: "54px",
-            left: "64px",
+            left: "63px",
             right: "64px"
           }}>
             <span className="absolute top-0 left-0 font-mono text-[10px] bg-[#204ecf] text-white px-1.5 py-0.5 rounded-sm z-10">

@@ -44,10 +44,13 @@ const Header = ({ variant = "default" }: HeaderProps) => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-[999] transition-all duration-300 ${isVisible ? "translate-y-0" : "-translate-y-full"} ${isScrolled
-        ? `${variant === "home" ? "bg-[#fcfaf6]/95" : "bg-background/95"} backdrop-blur-sm shadow-sm`
-        : "bg-transparent"
+      className={`fixed top-0 left-0 right-0 z-[999] transition-all duration-300 ${isVisible ? "translate-y-0" : "-translate-y-full"} ${variant === "home"
+        ? ""
+        : isScrolled
+          ? "bg-background/95 backdrop-blur-sm shadow-sm"
+          : "bg-transparent"
         }`}
+      style={variant === "home" ? { background: 'none', backgroundColor: 'transparent', backdropFilter: 'none', boxShadow: 'none' } : undefined}
     >
       <div className="w-full px-8 md:px-12 lg:px-16">
         <div className="flex items-center justify-end py-6">

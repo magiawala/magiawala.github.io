@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import Header from "@/components/Header";
+import HeroSection from "@/components/HeroSection";
 import Footer from "@/components/Footer";
 import verizonThumb from "@/assets/verizon-thumb.png";
 import hpThumb from "@/assets/hp-thumb.png";
@@ -27,71 +28,8 @@ const Home = () => {
 
             <main>
                 {/* Hero Section */}
-                <section className="hero">
-                    <div className="hero-content">
-                        {/* Wrapper for hover effect */}
-                        <div
-                            className="hero-wrapper"
-                            onMouseEnter={() => setIsHovered(true)}
-                            onMouseLeave={() => setIsHovered(false)}
-                        >
-                            {/* Content Layer */}
-                            <div className="content-layer">
-                                <h1 className="fade-in-up">
-                                    Hello, I'm <br />
-                                    <span>Devanshu Magiawala</span>
-                                </h1>
-                                <p className="subtitle fade-in-up delay-1">
-                                    Building digital experiences with creativity and code.
-                                </p>
-
-                                {/* Company Logos */}
-                                <div className="hero-logos fade-in-up delay-1">
-                                    <img src={hpLogo} alt="HP Logo" />
-                                    <img src={verizonLogo} alt="Verizon Logo" />
-                                    <img src={integrateLogo} alt="Integrate Logo" />
-                                    <img src={genuinLogo} alt="Genuin Logo" />
-                                </div>
-
-                                <div className="hero-actions fade-in-up delay-2">
-                                    <button onClick={scrollToWork} className="primary-btn">
-                                        View My Work
-                                        <span className="btn-measure width">24px</span>
-                                        <span className="btn-measure height">24px</span>
-                                    </button>
-                                </div>
-                            </div>
-
-                            {/* Debug Layer (Ghost Overlay) */}
-                            <div
-                                className={`debug-layer ${isHovered ? "opacity-100" : ""}`}
-                                aria-hidden="true"
-                            >
-                                {/* Margin Visualizations (Red) */}
-                                <div className="margin-indicator top">
-                                    <span className="label">margin: 54px</span>
-                                </div>
-                                <div className="margin-indicator left">
-                                    <span className="label">margin: 64px</span>
-                                </div>
-                                <div className="margin-indicator right"></div>
-                                <div className="margin-indicator bottom"></div>
-
-                                {/* Padding Visualizations (Blue) */}
-                                <div className="padding-indicator top">
-                                    <span className="label">padding: 40px</span>
-                                </div>
-                                <div className="padding-indicator left"></div>
-                                <div className="padding-indicator right"></div>
-                                <div className="padding-indicator bottom"></div>
-
-                                <div className="width-indicator-bottom">
-                                    <span className="label">width: auto</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                {/* Hero Section */}
+                <HeroSection />
 
                 {/* Featured Projects */}
                 <section id="work" className="featured-projects">
