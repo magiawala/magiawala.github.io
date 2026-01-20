@@ -21,7 +21,7 @@ const VerizonCaseStudy = () => {
           role="Verizon Business Product Designer"
           timeline="Summer 2024"
           tools="Figma, AI Design"
-          team="Verizon Design Team"
+          team="Verizon SMB team"
           heroImage={heroVerizon}
           accentColor="from-red-600/90 to-red-800/80" // Verizon Red-ish
         />
