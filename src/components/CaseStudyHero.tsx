@@ -79,7 +79,7 @@ const CaseStudyHero = ({
       </div>
     </div>
   </section>
-  );
+
 };
 
 export default CaseStudyHero;
