@@ -20,9 +20,9 @@ const CaseStudyHero = ({
   accentColor = "from-airbnb-red/80 to-airbnb-red/60",
 }: CaseStudyHeroProps) => {
   return (
-    <section className="relative w-screen left-1/2 -ml-[50vw] min-h-[70vh] md:min-h-[85vh] flex items-end pt-16">
+    <section className="w-full min-h-[70vh] md:min-h-[85vh] flex items-end pt-16">
       {/* Background Image with Gradient Overlay */}
-      <div className="absolute inset-0 z-0">
+      <div className="absolute top-0 left-0 w-full h-[70vh] md:h-[85vh] z-0">
         <img
           src={heroImage}
           alt={title}
