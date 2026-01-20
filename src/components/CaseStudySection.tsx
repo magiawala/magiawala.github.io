@@ -39,7 +39,7 @@ const CaseStudySection = ({
             </h2>
           </div>
           {/* Main Content */}
-          <div className="md:col-span-6">{children}</div>
+          <div className="md:col-span-8">{children}</div>
         </div>
       </div>
     </section>
