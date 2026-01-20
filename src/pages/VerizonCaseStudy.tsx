@@ -26,6 +26,55 @@ const VerizonCaseStudy = () => {
           accentColor="from-red-600/90 to-red-800/80" // Verizon Red-ish
         />
 
+        {/* Project Overview / Intro Section */}
+        <section className="py-16 md:py-24">
+          <div className="container mx-auto px-6 md:px-12 lg:px-16">
+            <div className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-16">
+              {/* Left Column: Title & Role */}
+              <div className="md:col-span-4">
+                <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Verizon</h2>
+                <div className="text-muted-foreground space-y-1 text-lg">
+                  <p>Summer 2024 Verizon SMB Team</p>
+                  <p>Product Design Intern</p>
+                </div>
+              </div>
+
+              {/* Right Column: Narrative */}
+              <div className="md:col-span-8">
+                <p className="body-text mb-6">
+                  I interned with the Verizon SMB (Small Medium Business) team, where I worked on designing
+                  internal tools and sales assist experiences to improve the workflow efficiency of sales representatives.
+                </p>
+                <p className="body-text">
+                  I had an amazing experience working on various projects throughout the summer and focused
+                  on my keystone project: designing an AI-powered sales cockpit that allows agents to find product
+                  bundles in a non-invasive and functional way.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Photo Gallery (Gray Background) */}
+        <div className="w-full bg-gray-50 py-16 md:py-24 mb-16">
+          <div className="container mx-auto px-6 md:px-12 lg:px-16">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {/* Placeholder 1 */}
+              <div className="aspect-[3/4] bg-gray-200 rounded-sm flex items-center justify-center text-gray-400 italic">
+                [Team Photo 1]
+              </div>
+              {/* Placeholder 2 */}
+              <div className="aspect-[3/4] bg-gray-200 rounded-sm flex items-center justify-center text-gray-400 italic">
+                [Office Photo]
+              </div>
+              {/* Placeholder 3 */}
+              <div className="aspect-[3/4] bg-gray-200 rounded-sm flex items-center justify-center text-gray-400 italic">
+                [Team Photo 2]
+              </div>
+            </div>
+          </div>
+        </div>
+
 
         {/* Context Section */}
         <div id="case-study-context">
