@@ -23,7 +23,7 @@ const Footer = () => {
   };
 
   return (
-    <footer id="contact" className="bg-background py-16 md:py-24">
+    <footer id="contact" className="site-footer py-16 md:py-24">
       <div className="container mx-auto px-6 md:px-12 lg:px-16">
         <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-foreground mb-12">
           Thanks for stopping by, let's chat!
