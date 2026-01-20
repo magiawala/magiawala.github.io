@@ -26,6 +26,31 @@ const VerizonCaseStudy = () => {
           accentColor="from-red-600/90 to-red-800/80" // Verizon Red-ish
         />
 
+
+        {/* Context Section */}
+        <div id="case-study-context">
+          <CaseStudySection title="Context">
+            <p className="body-text mb-6">
+              Verizon Business serves millions of small and medium-sized businesses.
+              The sales teams needed a more efficient way to access product information and close deals.
+            </p>
+            <p className="body-text mb-8">
+              My project focused on{" "}
+              <strong>
+                designing an AI-powered sales assist tool
+              </strong>{" "}
+              that integrates seamlessly into their existing workflows.
+              I worked on defining product flows and conducting testing to ensure the solution met the diverse needs of sales agents.
+            </p>
+
+            <h3 className="subsection-title">👩‍💻 Stakeholders</h3>
+            <p className="body-text">
+              I collaborated closely with product managers, engineers, and other designers
+              to ensure the AI features were technically feasible and aligned with business goals.
+            </p>
+          </CaseStudySection>
+        </div>
+
         {/* Context Section */}
         <div id="case-study-context">
           <CaseStudySection title="Context">
