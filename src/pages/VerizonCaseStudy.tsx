@@ -48,43 +48,44 @@ const VerizonCaseStudy = () => {
               to ensure the AI features were technically feasible and aligned with business goals.
             </p>
           </CaseStudySection>
+        </div>
 
-          {/* Problem Section */}
-          <CaseStudySection title="Problem">
-            <div className="mb-6">
-              <h3 className="subsection-title">
-                ⚡️ The Challenge:
-              </h3>
-              <p className="text-lg md:text-xl text-foreground font-medium mb-6">
-                How can we leverage AI to help sales teams find the right solutions for customers faster?
-              </p>
-            </div>
-            <p className="body-text">
-              Sales agents often navigate complex product catalogs and information sources.
-              The goal was to streamline this process, reducing time-to-quote and improving accuracy.
+        {/* Problem Section */}
+        <CaseStudySection title="Problem">
+          <div className="mb-6">
+            <h3 className="subsection-title">
+              ⚡️ The Challenge:
+            </h3>
+            <p className="text-lg md:text-xl text-foreground font-medium mb-6">
+              How can we leverage AI to help sales teams find the right solutions for customers faster?
             </p>
-          </CaseStudySection>
-
-          {/* Context Image */}
-          {/* Context Image - Placeholder for now or remove if no asset */}
-          <div className="py-12 bg-gray-50 mb-12 flex justify-center items-center text-gray-400 italic">
-            [Project Imagery Confidential]
           </div>
+          <p className="body-text">
+            Sales agents often navigate complex product catalogs and information sources.
+            The goal was to streamline this process, reducing time-to-quote and improving accuracy.
+          </p>
+        </CaseStudySection>
 
-          {/* Design Process Section - Simplified for placeholder */}
-          <CaseStudySection label="DESIGN PROCESS" title="Approach">
-            <p className="body-text mb-6">
-              We started by mapping out the current sales flow and identifying friction points.
-            </p>
-          </CaseStudySection>
+        {/* Context Image */}
+        {/* Context Image - Placeholder for now or remove if no asset */}
+        <div className="py-12 bg-gray-50 mb-12 flex justify-center items-center text-gray-400 italic">
+          [Project Imagery Confidential]
+        </div>
 
-          {/* Reflection Section */}
-          <CaseStudySection title="Reflection">
-            <p className="body-text mb-6">
-              This opportunity with Verizon allowed me to dive deep into enterprise UX and AI integration.
-              Designing for internal tools presents unique challenges in balancing efficiency with discoverability.
-            </p>
-          </CaseStudySection>
+        {/* Design Process Section - Simplified for placeholder */}
+        <CaseStudySection label="DESIGN PROCESS" title="Approach">
+          <p className="body-text mb-6">
+            We started by mapping out the current sales flow and identifying friction points.
+          </p>
+        </CaseStudySection>
+
+        {/* Reflection Section */}
+        <CaseStudySection title="Reflection">
+          <p className="body-text mb-6">
+            This opportunity with Verizon allowed me to dive deep into enterprise UX and AI integration.
+            Designing for internal tools presents unique challenges in balancing efficiency with discoverability.
+          </p>
+        </CaseStudySection>
       </main>
 
       <Footer />
