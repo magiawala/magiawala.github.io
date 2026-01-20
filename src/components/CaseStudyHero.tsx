@@ -39,30 +39,30 @@ const CaseStudyHero = ({
             <div className="md:col-span-4 lg:col-span-3">
               <div className="space-y-6 text-primary-foreground">
                 <div>
-                  <h3 className="text-xs font-semibold tracking-widest uppercase opacity-70 mb-1">
+                  <h3 className="text-sm font-semibold tracking-widest uppercase opacity-70 mb-1">
                     ROLE
                   </h3>
-                  <p className="text-sm font-medium">{role}</p>
+                  <p className="text-base font-medium">{role}</p>
                 </div>
                 <div>
-                  <h3 className="text-xs font-semibold tracking-widest uppercase opacity-70 mb-1">
+                  <h3 className="text-sm font-semibold tracking-widest uppercase opacity-70 mb-1">
                     DURATION
                   </h3>
-                  <p className="text-sm font-medium">{timeline}</p>
+                  <p className="text-base font-medium">{timeline}</p>
                 </div>
                 {tools && (
                   <div>
-                    <h3 className="text-xs font-semibold tracking-widest uppercase opacity-70 mb-1">
+                    <h3 className="text-sm font-semibold tracking-widest uppercase opacity-70 mb-1">
                       TOOLS
                     </h3>
-                    <p className="text-sm font-medium">{tools}</p>
+                    <p className="text-base font-medium">{tools}</p>
                   </div>
                 )}
                 <div>
-                  <h3 className="text-xs font-semibold tracking-widest uppercase opacity-70 mb-1">
+                  <h3 className="text-sm font-semibold tracking-widest uppercase opacity-70 mb-1">
                     TEAM
                   </h3>
-                  <p className="text-sm font-medium">{team}</p>
+                  <p className="text-base font-medium">{team}</p>
                 </div>
               </div>
             </div>
