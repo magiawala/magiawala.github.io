@@ -88,7 +88,8 @@ const Footer = () => {
       {/* Scroll Button - Down arrow at top, Up arrow when scrolled */}
       <button
         onClick={handleScrollClick}
-        className="fixed bottom-8 right-8 p-3 bg-transparent text-muted-foreground hover:text-foreground transition-colors duration-200"
+        className={`fixed bottom-8 right-8 p-3 bg-transparent transition-colors duration-200 ${isAtTop ? "text-white hover:text-white/80" : "text-muted-foreground hover:text-foreground"
+          }`}
         aria-label={isAtTop ? "Scroll down" : "Scroll to top"}
       >
         {isAtTop ? (
