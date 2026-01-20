@@ -67,8 +67,8 @@ const CaseStudyHero = ({
               </div>
             </div>
 
-            {/* Right - Title */}
-            <div className="md:col-span-8 lg:col-span-9">
+            {/* Right - Title (Removed per request) */}
+            <div className="md:col-span-8 lg:col-span-9 hidden">
               <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-primary-foreground mb-4 leading-tight">
                 {title}
               </h1>
