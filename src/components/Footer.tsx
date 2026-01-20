@@ -14,7 +14,14 @@ const Footer = () => {
 
   const handleScrollClick = () => {
     if (isAtTop) {
-      // Scroll to work section
+      // If on a case study page, scroll to context
+      const contextSection = document.querySelector("#case-study-context");
+      if (contextSection) {
+        contextSection.scrollIntoView({ behavior: "smooth" });
+        return;
+      }
+
+      // Fallback: Scroll to work section (Home page behavior)
       document.querySelector("#work")?.scrollIntoView({ behavior: "smooth" });
     } else {
       // Scroll to top
@@ -84,7 +91,9 @@ const Footer = () => {
         className="fixed bottom-8 right-8 p-3 bg-transparent text-muted-foreground hover:text-foreground transition-colors duration-200"
         aria-label={isAtTop ? "Scroll down" : "Scroll to top"}
       >
-        {isAtTop ? null : (
+        {isAtTop ? (
+          <ArrowDown className="w-6 h-6" />
+        ) : (
           <ArrowUp className="w-6 h-6" />
         )}
       </button>
