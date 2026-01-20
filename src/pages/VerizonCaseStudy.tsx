@@ -5,6 +5,7 @@ import CaseStudySection from "@/components/CaseStudySection";
 import CaseStudyImage from "@/components/CaseStudyImage";
 
 import verizonThumb from "@/assets/verizon-thumb.png";
+import heroVerizon from "@/assets/hero-verizon.jpg";
 import researchImage from "@/assets/research-process.jpg"; // Keeping generic for now, or replace if better asset found
 
 const VerizonCaseStudy = () => {
@@ -21,7 +22,7 @@ const VerizonCaseStudy = () => {
           timeline="Summer 2024"
           tools="Figma, AI Design"
           team="Verizon Design Team"
-          heroImage={verizonThumb}
+          heroImage={heroVerizon}
           accentColor="from-red-600/90 to-red-800/80" // Verizon Red-ish
         />
 
