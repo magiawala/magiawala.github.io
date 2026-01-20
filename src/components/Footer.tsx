@@ -84,9 +84,7 @@ const Footer = () => {
         className="fixed bottom-8 right-8 p-3 bg-transparent text-muted-foreground hover:text-foreground transition-colors duration-200"
         aria-label={isAtTop ? "Scroll down" : "Scroll to top"}
       >
-        {isAtTop ? (
-          <ArrowDown className="w-6 h-6" />
-        ) : (
+        {isAtTop ? null : (
           <ArrowUp className="w-6 h-6" />
         )}
       </button>
