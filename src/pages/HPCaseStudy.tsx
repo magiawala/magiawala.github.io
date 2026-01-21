@@ -18,8 +18,8 @@ import recommendationsVideo from "@/assets/Recommendations.webm";
 import fullPrototypeVideo from "@/assets/Full Prototype.webm";
 
 
-import verizonDesignSystem from "@/assets/verizon-design-system.png";
 import HPBanner from "@/assets/HP banner.png";
+import hpThinkAloud from "@/assets/hp-think-aloud.png";
 import LazyVideo from "@/components/LazyVideo";
 
 const HPCaseStudy = () => {
