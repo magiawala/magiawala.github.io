@@ -202,19 +202,18 @@ const HPCaseStudy = () => {
                 </CaseStudySection>
 
 
+
                 <CaseStudySection title="Outcome">
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    <div className="space-y-12">
                         <div>
                             <h3 className="subsection-title">Trust & Confidence</h3>
-                            <p className="body-text mb-6">
-                                Beyond the metrics, the qualitative shift was significant. Users described the new Companion as "logical" and "approachable." By clearly signaling when the secure Local AI was active, we successfully turned a technical constraint into a privacy feature that students valued.
+                            <p className="body-text">
+                                Beyond the metrics, the qualitative shift was significant. Users described the Companion as logical and approachable. By signaling when the secure Local AI was active, successfully turned a technical constraint into a privacy trust factor that users valued.
                             </p>
-                        </div>
-                        <div>
-                            {/* Intentionally left empty for layout balance or future image */}
                         </div>
                     </div>
                 </CaseStudySection>
+
 
                 <CaseStudySection title="Takeaways">
                     <div className="space-y-12">

@@ -7,6 +7,7 @@ interface CaseStudyHeroProps {
   team: string;
   heroImage: string;
   accentColor?: string;
+  imageClassName?: string;
 }
 
 const CaseStudyHero = ({
@@ -18,6 +19,7 @@ const CaseStudyHero = ({
   team,
   heroImage,
   accentColor = "from-airbnb-red/80 to-airbnb-red/60",
+  imageClassName = "",
 }: CaseStudyHeroProps) => {
   return (
     <section className="w-full min-h-screen flex items-end pt-16">
@@ -26,7 +28,7 @@ const CaseStudyHero = ({
         <img
           src={heroImage}
           alt={title}
-          className="w-full h-full object-cover"
+          className={`w-full h-full object-cover ${imageClassName}`}
         />
         <div className={`absolute inset-0 bg-gradient-to-br ${accentColor}`} />
       </div>
