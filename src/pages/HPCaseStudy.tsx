@@ -207,7 +207,7 @@ const HPCaseStudy = () => {
                         <div>
                             <h3 className="subsection-title">Trust & Confidence</h3>
                             <p className="body-text mb-6">
-                                Beyond the metrics, the qualitative shift was significant. Students described the new Companion as "logical" and "approachable." By clearly signaling when the secure Local AI was active, we successfully turned a technical constraint into a privacy feature that students valued.
+                                Beyond the metrics, the qualitative shift was significant. Users described the new Companion as "logical" and "approachable." By clearly signaling when the secure Local AI was active, we successfully turned a technical constraint into a privacy feature that students valued.
                             </p>
                         </div>
                         <div>
