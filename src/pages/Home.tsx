@@ -5,6 +5,7 @@ import HeroSection from "@/components/HeroSection";
 import Footer from "@/components/Footer";
 import verizonThumb from "@/assets/verizon-thumb.png";
 import hpThumb from "@/assets/hp-thumb.png";
+import nuanceoThumb from "@/assets/nuanceo-hero.png";
 import hpLogo from "@/assets/logos/logo2.png";
 import verizonLogo from "@/assets/logos/verizon_new.png";
 import integrateLogo from "@/assets/logos/integrate_new.png";
@@ -93,6 +94,28 @@ const Home = () => {
                                 task completion by 25%.
                             </p>
                             <Link to="/hp" className="view-project-link">
+                                View Project →
+                            </Link>
+                        </div>
+                    </article>
+
+                    {/* Project 3: Nuanceo */}
+                    <article className="project-showcase-item">
+                        <div className="project-thumb">
+                            <img src={nuanceoThumb} alt="Nuanceo Project" />
+                        </div>
+                        <div className="project-details">
+                            <span className="role-label">Product Designer</span>
+                            <h2 className="project-title-large">
+                                Analyzing art critique for student-teacher interactions
+                            </h2>
+                            <div className="project-tags">
+                                <span className="tag-pill" style={{ backgroundColor: '#F3E8FF', color: '#6B21A8' }}>User Research</span>
+                            </div>
+                            <p className="project-desc-text">
+                                Led user testing and redesign of an art critique platform, resulting in a 30% faster task completion and 4x increase in daily active users.
+                            </p>
+                            <Link to="/nuanceo" className="view-project-link">
                                 View Project →
                             </Link>
                         </div>
