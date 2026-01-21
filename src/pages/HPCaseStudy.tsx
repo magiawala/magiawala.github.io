@@ -129,6 +129,40 @@ const HPCaseStudy = () => {
                     </div>
                 </CaseStudySection>
 
+                {/* Discovery Section */}
+                <CaseStudySection label="DISCOVERY" title="Research Questions">
+                    <p className="body-text mb-6">
+                        I started with questions to understand the user mental model regarding AI:
+                    </p>
+                    <ul className="list-disc pl-6 space-y-4 text-muted-foreground text-lg mb-12">
+                        <li><strong className="text-foreground">"How is AI used in daily workflows?"</strong></li>
+                        <li><strong className="text-foreground">"When do students prefer Local AI over Cloud AI?"</strong></li>
+                        <li><strong className="text-foreground">"What are the specific pain points in the current version?"</strong></li>
+                    </ul>
+
+                    <h3 className="subsection-title">Think Aloud (Current Version)</h3>
+                    <p className="body-text mb-6">
+                        We ran Think Aloud sessions on the existing "Old Version" to identify friction points. The feedback was clear:
+                    </p>
+                    <ul className="space-y-6">
+                        <li className="flex gap-4">
+                            <div className="w-10 h-10 rounded-full bg-red-100 flex items-center justify-center shrink-0 text-red-600 font-bold mt-1">1</div>
+                            <div>
+                                <h4 className="font-bold text-foreground text-lg">Icons Misread</h4>
+                                <p className="text-muted-foreground">Users couldn't decipher the navigation icons, leading to a feeling of "getting lost."</p>
+                            </div>
+                        </li>
+
+                        <li className="flex gap-4">
+                            <div className="w-10 h-10 rounded-full bg-red-100 flex items-center justify-center shrink-0 text-red-600 font-bold mt-1">2</div>
+                            <div>
+                                <h4 className="font-bold text-foreground text-lg">History Hard to Access</h4>
+                                <p className="text-muted-foreground">Past work was buried, making the tool feel like a "one-off" chat rather than a long-term study partner.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </CaseStudySection>
+
 
                 <CaseStudySection title="Solution">
                     <p className="body-text mb-8">
