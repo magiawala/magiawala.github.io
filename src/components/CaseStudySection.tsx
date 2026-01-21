@@ -32,7 +32,7 @@ const CaseStudySection = ({
       <div className="container mx-auto px-6 md:px-12 lg:px-16">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-16">
           {/* Sidebar - Section Title */}
-          <div className="md:col-span-3">
+          <div className="md:col-span-4">
             {label && <p className="section-label mb-2">{label}</p>}
             <h2 className="text-xl md:text-2xl font-bold text-foreground sticky top-24">
               {title}

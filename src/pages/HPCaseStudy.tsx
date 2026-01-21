@@ -32,7 +32,7 @@ const HPCaseStudy = () => {
                 <CaseStudyHero
                     title="Revamped onboarding and home navigation for HP AI Companion"
                     subtitle="Designed an intuitive onboarding and home screen indicators for AI PC Companion experience clarifying AI modes (Local vs. Cloud), optimizing task completion by 25%."
-                    role="HP Inc. Product Designer"
+                    role="Product Designer"
                     timeline="Fall 2024"
                     tools="Figma, Testing"
                     team="HP Design Team"
@@ -46,7 +46,7 @@ const HPCaseStudy = () => {
                         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-16">
                             {/* Left Column: Title & Role */}
                             <div className="md:col-span-4">
-                                <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">HP AI Companion</h2>
+                                <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">HP Inc</h2>
                                 <div className="text-muted-foreground space-y-1 text-lg">
 
                                     <p>Product Designer</p>
@@ -57,41 +57,13 @@ const HPCaseStudy = () => {
                             <div className="md:col-span-8">
                                 <p className="body-text mb-6">
                                     {/* TODO: Add HP specific narrative */}
-                                    I worked as a Product Designer with HP, focusing on the AI Companion experience. My goal was to clarify the distinction between local and cloud-based AI processing for users.
+                                    I worked as a Product Designer on the HP AI Companion, where I collaborated with researchers to validate preference between local and cloud AI models and increase confidence in using the tool for daily tasks.
                                 </p>
                             </div>
                         </div>
                     </div>
                 </section>
 
-
-                {/* Image Grid */}
-                <div className="container mx-auto px-6 md:px-12 lg:px-16 mb-24">
-                    {/* Placeholder for now - using Verizon assets until updated */}
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                        <div className="aspect-[4/5] w-full overflow-hidden rounded-lg shadow-sm">
-                            <img
-                                src={verizonGallery1}
-                                alt="Process 1"
-                                className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
-                            />
-                        </div>
-                        <div className="aspect-[4/5] w-full overflow-hidden rounded-lg shadow-sm">
-                            <img
-                                src={verizonGallery2}
-                                alt="Process 2"
-                                className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
-                            />
-                        </div>
-                        <div className="aspect-[4/5] w-full overflow-hidden rounded-lg shadow-sm">
-                            <img
-                                src={verizonGallery3}
-                                alt="Process 3"
-                                className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
-                            />
-                        </div>
-                    </div>
-                </div>
 
 
                 {/*  --- CONTENT SECTIONS (Placeholders) --- */}
