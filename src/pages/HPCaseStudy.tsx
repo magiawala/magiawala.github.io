@@ -161,13 +161,34 @@ const HPCaseStudy = () => {
                             </div>
                         </li>
                     </ul>
+                    <h3 className="subsection-title mt-12">Insights</h3>
+                    <p className="body-text mb-6">
+                        The research revealed that users don't care about the "tech stack" (Local vs. Cloud) as much as they care about the Task. They categorized their needs into specific buckets: Writing, Coding, and Summarizing.
+                    </p>
+                    <p className="body-text">
+                        We realized we needed a <strong className="text-foreground">Unified Approach</strong> a clear, informative interface that acknowledged the technology's limits while highlighting the specific benefits (privacy/speed) relevant to their current task.
+                    </p>
                 </CaseStudySection>
 
 
                 <CaseStudySection title="Solution">
-                    <p className="body-text mb-8">
-                        We introduced clear visual indicators and a guided onboarding flow that explicitly educated users on the different processing modes.
-                    </p>
+                    <div className="space-y-12">
+                        <div>
+                            <h3 className="subsection-title">Onboarding</h3>
+                            <p className="text-xl text-foreground font-semibold mb-2">Addressing "Awareness of Local vs. Cloud AI"</p>
+                            <p className="body-text mb-4">
+                                I explored letting users manually toggle between "Cloud" and "Local" AI, but research showed this was overwhelming. My final solution uses a <strong className="text-foreground">Transparent Onboarding Flow</strong> that explicitly highlights when Local AI is active. This education-first approach replaces user guesswork with immediate trust in the device’s privacy.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3 className="subsection-title">Navigation & Guided Home</h3>
+                            <p className="text-xl text-foreground font-semibold mb-2">Addressing "Poor Navigation" & "Blank Slate Freeze"</p>
+                            <p className="body-text mb-4">
+                                I experimented with a minimal "chat-only" interface, but found that students would freeze at the blank canvas. The final design presents <strong className="text-foreground">Task-Based Prompts</strong> (like "Coding" or "Summarizing") that align with their daily habits. I also reorganized the layout to fix the "Discover vs. Perform" confusion, moving files and chats into a intuitive Unified History.
+                            </p>
+                        </div>
+                    </div>
                 </CaseStudySection>
 
                 {/*  --- VIDEO PLACEHOLDERS (Reusing Verizon for layout structure, update sources later) --- */}
