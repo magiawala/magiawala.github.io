@@ -5,8 +5,6 @@ import CaseStudySection from "@/components/CaseStudySection";
 import { Link } from "react-router-dom";
 import CaseStudyImage from "@/components/CaseStudyImage";
 
-import verizonThumb from "@/assets/verizon-thumb.png";
-import heroVerizon from "@/assets/hero-verizon.jpg"; // You likely want to change this to an HP asset later
 import researchImage from "@/assets/research-process.jpg";
 import verizonGallery1 from "@/assets/verizon-gallery-1.jpg";
 import verizonGallery2 from "@/assets/verizon-gallery-2.jpg";
