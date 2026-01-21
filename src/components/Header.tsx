@@ -83,13 +83,12 @@ const Header = ({ variant = "default" }: HeaderProps) => {
           <div className="flex items-center justify-end py-6">
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center gap-8">
-              <a
-                href="#about"
-                onClick={(e) => handleNavClick(e, "about")}
+              <Link
+                to="/about"
                 className={`text-sm font-medium transition-colors duration-200 cursor-pointer ${textColorClass}`}
               >
                 About
-              </a>
+              </Link>
               <a
                 href="#work"
                 onClick={(e) => handleNavClick(e, "work")}
@@ -137,13 +136,13 @@ const Header = ({ variant = "default" }: HeaderProps) => {
           }`}
       >
         <div className="flex flex-col items-center justify-center gap-8 h-full">
-          <a
-            href="#about"
+          <Link
+            to="/about"
             className="text-2xl font-medium text-zinc-950"
-            onClick={(e) => handleNavClick(e, "about")}
+            onClick={() => setIsMenuOpen(false)}
           >
             About
-          </a>
+          </Link>
           <a
             href="#work"
             className="text-2xl font-medium text-zinc-950"

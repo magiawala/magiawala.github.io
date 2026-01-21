@@ -4,6 +4,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { HashRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
+import About from "./pages/About";
 import VerizonCaseStudy from "./pages/VerizonCaseStudy";
 import HPCaseStudy from "./pages/HPCaseStudy";
 import NuanceoCaseStudy from "./pages/NuanceoCaseStudy";
@@ -22,6 +23,7 @@ const App = () => (
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
           <Route path="/verizon" element={<VerizonCaseStudy />} />
           <Route path="/hp" element={<HPCaseStudy />} />
           <Route path="/nuanceo" element={<NuanceoCaseStudy />} />

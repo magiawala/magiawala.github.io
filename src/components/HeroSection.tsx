@@ -10,7 +10,7 @@ const HeroSection = () => {
       behavior: "smooth"
     });
   };
-  return <section className="min-h-[50vh] md:min-h-screen flex items-start justify-center px-6 md:px-12 lg:px-16 pt-20 md:pt-28 pb-10 md:pb-0">
+  return <section className="min-h-[50vh] md:min-h-screen flex items-start justify-center px-6 md:px-12 lg:px-16 pt-32 md:pt-40 pb-10 md:pb-0">
     <div className="w-full max-w-4xl mx-auto">
       {/* Wrapper for hover effect */}
       <div className="relative inline-block p-5 md:p-10" onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>

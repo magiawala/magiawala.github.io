@@ -6,6 +6,9 @@ import Footer from "@/components/Footer";
 import verizonThumb from "@/assets/verizon-thumb.png";
 import hpThumb from "@/assets/hp-thumb.png";
 import nuanceoThumb from "@/assets/nuanceo-card.jpg";
+import anomalyThumb from "@/assets/anomaly-thumb.png";
+import satelliteThumb from "@/assets/satellite-thumb.png";
+import musicThumb from "@/assets/music-thumb.png";
 import hpLogo from "@/assets/logos/logo2.png";
 import verizonLogo from "@/assets/logos/verizon_new.png";
 import integrateLogo from "@/assets/logos/integrate_new.png";
@@ -50,7 +53,7 @@ const Home = () => {
                 </div>
 
                 {/* Featured Projects */}
-                <section id="work" className="featured-projects">
+                <section id="work" className="featured-projects !pb-0">
                     {/* Project 1: Verizon Business */}
                     <article className="project-showcase-item">
                         <div className="project-thumb">
@@ -102,7 +105,7 @@ const Home = () => {
                     </article>
 
                     {/* Project 3: Nuanceo */}
-                    <article className="project-showcase-item">
+                    <article className="project-showcase-item !mb-240">
                         <div className="project-thumb">
                             <img src={nuanceoThumb} alt="Nuanceo Project" />
                         </div>
@@ -124,10 +127,56 @@ const Home = () => {
                         </div>
                     </article>
                 </section>
+
+                {/* Technical Projects Section */}
+                <section className="featured-projects !pt-12 !pb-24 !mb-[1px]">
+                    <div className="flex items-center gap-4 mb-12">
+                        <h2 className="text-3xl md:text-4xl font-bold text-foreground">Engineering & Code</h2>
+                        <div className="h-px flex-1 bg-border/60"></div>
+                    </div>
+
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
+                        {/* Project 1: Anomaly Detection */}
+                        <a href="https://github.com/magiawala/Anomaly-Detection-CVPR2018" target="_blank" rel="noopener noreferrer" className="group block">
+                            <div className="aspect-video overflow-hidden rounded-lg mb-6 shadow-sm group-hover:shadow-md transition-all duration-300 border border-border/50">
+                                <img src={anomalyThumb} alt="Anomaly Detection" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                            </div>
+                            <h3 className="text-xl font-bold text-foreground mb-2 group-hover:text-blue-600 transition-colors">Anomaly Detection CVPR2018</h3>
+                            <p className="text-foreground/70 text-sm leading-relaxed mb-4">
+                                Real-world anomaly detection in surveillance videos using deep learning techniques to identify irregular patterns in crowded scenes.
+                            </p>
+                            <span className="text-sm font-semibold text-blue-600 group-hover:translate-x-1 transition-transform inline-block">View on GitHub →</span>
+                        </a>
+
+                        {/* Project 2: Satellite Image Processing */}
+                        <a href="https://github.com/magiawala/Satellite_Image_Processing" target="_blank" rel="noopener noreferrer" className="group block">
+                            <div className="aspect-video overflow-hidden rounded-lg mb-6 shadow-sm group-hover:shadow-md transition-all duration-300 border border-border/50">
+                                <img src={satelliteThumb} alt="Satellite Image Processing" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                            </div>
+                            <h3 className="text-xl font-bold text-foreground mb-2 group-hover:text-emerald-600 transition-colors">Satellite Image Processing</h3>
+                            <p className="text-foreground/70 text-sm leading-relaxed mb-4">
+                                Advanced image processing pipeline for analyzing and segmenting satellite imagery for environmental and urban monitoring.
+                            </p>
+                            <span className="text-sm font-semibold text-emerald-600 group-hover:translate-x-1 transition-transform inline-block">View on GitHub →</span>
+                        </a>
+
+                        {/* Project 3: Music Instrument Classifier */}
+                        <a href="https://github.com/magiawala/Music_Intrument_Classifier" target="_blank" rel="noopener noreferrer" className="group block">
+                            <div className="aspect-video overflow-hidden rounded-lg mb-6 shadow-sm group-hover:shadow-md transition-all duration-300 border border-border/50">
+                                <img src={musicThumb} alt="Music Instrument Classifier" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                            </div>
+                            <h3 className="text-xl font-bold text-foreground mb-2 group-hover:text-purple-600 transition-colors">Music Instrument Classifier</h3>
+                            <p className="text-foreground/70 text-sm leading-relaxed mb-4">
+                                Audio analysis model capable of classifying different musical instruments from raw audio clips using spectral feature extraction.
+                            </p>
+                            <span className="text-sm font-semibold text-purple-600 group-hover:translate-x-1 transition-transform inline-block">View on GitHub →</span>
+                        </a>
+                    </div>
+                </section>
             </main>
 
             <Footer />
-        </div>
+        </div >
     );
 };
 
