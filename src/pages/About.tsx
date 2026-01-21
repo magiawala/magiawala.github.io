@@ -47,7 +47,7 @@ const About = () => {
                         <div className="space-y-6">
                             <h3 className="text-sm font-bold tracking-widest text-[#731826] uppercase">About Me</h3>
                             <h1 className="text-3xl md:text-4xl font-bold text-zinc-900 leading-tight">
-                                Namaste (nuh-MUH-stay) 🙏
+                                DE-vahn-shoo
                             </h1>
                             <p className="text-lg text-zinc-600 leading-relaxed max-w-2xl">
                                 I'm a Developer turned Designer, passionate about crafting data-driven solutions that solve real problems.
