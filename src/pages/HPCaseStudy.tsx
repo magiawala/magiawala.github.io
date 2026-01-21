@@ -159,8 +159,12 @@ const HPCaseStudy = () => {
                                 <h4 className="font-bold text-foreground text-lg">History Hard to Access</h4>
                                 <p className="text-muted-foreground">Past work was buried, making the tool feel like a "one-off" chat rather than a long-term study partner.</p>
                             </div>
+
                         </li>
                     </ul>
+                    <div>
+                        <img src={hpThinkAloud} alt="Think Aloud" className="rounded-lg shadow-lg" />
+                    </div>
                     <h3 className="subsection-title mt-12">Insights</h3>
                     <p className="body-text mb-6">
                         The research revealed that users don't care about the "tech stack" (Local vs. Cloud) as much as they care about the Task. They categorized their needs into specific buckets: Writing, Coding, and Summarizing.
@@ -217,7 +221,7 @@ const HPCaseStudy = () => {
                             </p>
                         </div>
                         <div>
-                            <img src={verizonDesignSystem} alt="Design System" className="rounded-lg shadow-lg" />
+                            <img src={hpThinkAloud} alt="Design System" className="rounded-lg shadow-lg" />
                         </div>
                     </div>
                 </CaseStudySection>
