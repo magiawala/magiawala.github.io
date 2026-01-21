@@ -95,7 +95,7 @@ const HPCaseStudy = () => {
 
 
                 {/*  --- CONTENT SECTIONS (Placeholders) --- */}
-                <CaseStudySection title="Problem Space" isDark>
+                <CaseStudySection title="Problem Space">
                     <p className="body-text text-white/90 mb-8">
                         Users were unclear about when their data was being processed locally on their device versus sent to the cloud. This ambiguity created privacy concerns and reduced trust in the AI Companion features.
                     </p>
@@ -131,7 +131,7 @@ const HPCaseStudy = () => {
                 </CaseStudySection>
 
 
-                <CaseStudySection title="Outcome" isDark>
+                <CaseStudySection title="Outcome">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                         <div>
                             <p className="body-text text-white/90 mb-6">

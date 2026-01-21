@@ -33,7 +33,7 @@ const VerizonCaseStudy = () => {
         <CaseStudyHero
           title="Defined product flows and testing for Verizon small business sales teams"
           subtitle="Designed an AI sales assist tool for Verizon Business, shaping early product concepts and helping SMB sales teams close deals faster."
-          role="Verizon Business Product Designer"
+          role="Product Designer"
           timeline="Summer 2024"
           tools="Figma, AI Design"
           team="Verizon SMB team"
