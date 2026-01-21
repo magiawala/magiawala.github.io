@@ -6,7 +6,7 @@ import { Download } from "lucide-react";
 const Resume = () => {
   return (
     <div className="min-h-screen bg-background">
-      <Header variant="default" />
+      <Header variant="standard" />
 
       <main className="pt-24 pb-20">
         <div className="container mx-auto px-6 md:px-12 lg:px-16">

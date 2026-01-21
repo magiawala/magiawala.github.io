@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 
 interface HeaderProps {
-  variant?: "home" | "default";
+  variant?: "home" | "default" | "standard";
 }
 
 const Header = ({ variant = "default" }: HeaderProps) => {
@@ -32,15 +32,18 @@ const Header = ({ variant = "default" }: HeaderProps) => {
 
   // For home page, text is dark since background is light
   // For case study pages with hero, text starts white then becomes dark on scroll
-  const textColorClass = variant === "home"
-    ? "text-foreground/80 hover:text-foreground"
-    : isScrolled
+  // For standard pages (Resume) without hero image, text is always dark
+  const textColorClass =
+    variant === "home" || variant === "standard"
       ? "text-foreground/80 hover:text-foreground"
-      : "text-white/80 hover:text-white";
+      : isScrolled
+        ? "text-foreground/80 hover:text-foreground"
+        : "text-white/80 hover:text-white";
 
-  const hamburgerBgClass = variant === "home"
-    ? "bg-zinc-950"
-    : isScrolled ? "bg-zinc-950" : "bg-white";
+  const hamburgerBgClass =
+    variant === "home" || variant === "standard"
+      ? "bg-zinc-950"
+      : isScrolled ? "bg-zinc-950" : "bg-white";
 
   return (
     <nav
