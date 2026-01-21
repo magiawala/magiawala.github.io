@@ -28,76 +28,64 @@ const HPCaseStudy = () => {
             <Header variant="default" />
 
             <main>
-                {/* Hero Section - Full width with gradient overlay */}
                 <CaseStudyHero
-                    title="Revamped onboarding and home navigation for HP AI Companion"
-                    subtitle="Designed an intuitive onboarding and home screen indicators for AI PC Companion experience clarifying AI modes (Local vs. Cloud), optimizing task completion by 25%."
-                    role="HP Inc. Product Designer"
+                    title="Designing Confidence in Hybrid AI"
+                    subtitle="Redesigning the HP AI Companion to help students seamlessly navigate Local and Cloud AI."
+                    role="Product Designer"
                     timeline="Fall 2024"
                     tools="Figma, Testing"
                     team="HP Design Team"
                     heroImage={heroVerizon} // TODO: Replace with HP hero image
-                    accentColor="from-blue-600/90 to-blue-800/80" // Blue for HP
+                    accentColor="from-blue-600/90 to-blue-800/80"
                 />
 
-                {/* Project Overview / Intro Section */}
+                {/* Introduction */}
                 <section className="py-16 md:py-24">
                     <div className="container mx-auto px-6 md:px-12 lg:px-16">
                         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-16">
-                            {/* Left Column: Title & Role */}
                             <div className="md:col-span-4">
-                                <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">HP AI Companion</h2>
+                                <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">The Challenge</h2>
                                 <div className="text-muted-foreground space-y-1 text-lg">
-
-                                    <p>Product Designer</p>
+                                    <p>How do you show the complexity of Hybrid AI in a way that feels smooth, intuitive, and trustworthy?</p>
                                 </div>
                             </div>
-
-                            {/* Right Column: Narrative */}
                             <div className="md:col-span-8">
                                 <p className="body-text mb-6">
-                                    {/* TODO: Add HP specific narrative */}
-                                    I worked as a Product Designer with HP, focusing on the AI Companion experience. My goal was to clarify the distinction between local and cloud-based AI processing for users.
+                                    The first time I encountered the idea of hybrid AI in the HP AI PC Companion, I was intrigued. Local AI and cloud AI working together sounded powerful, fast, private, and flexible.
+                                </p>
+                                <p className="body-text mb-6">
+                                    But it also raised a design puzzle: how do you show all of that complexity in a way that feels smooth, intuitive, and trustworthy for students? It wasn't a problem of missing features; it was a problem of perception and flow.
+                                </p>
+                                <p className="body-text">
+                                    Students already had the technology at their fingertips. The challenge was making it approachable, discoverable, and something they could confidently weave into their daily academic lives.
                                 </p>
                             </div>
                         </div>
                     </div>
                 </section>
 
-
                 {/* Image Grid */}
                 <div className="container mx-auto px-6 md:px-12 lg:px-16 mb-24">
-                    {/* Placeholder for now - using Verizon assets until updated */}
+                    {/* Placeholder - using Verizon assets until updated */}
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                         <div className="aspect-[4/5] w-full overflow-hidden rounded-lg shadow-sm">
-                            <img
-                                src={verizonGallery1}
-                                alt="Process 1"
-                                className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
-                            />
+                            <img src={verizonGallery1} alt="Process 1" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
                         </div>
                         <div className="aspect-[4/5] w-full overflow-hidden rounded-lg shadow-sm">
-                            <img
-                                src={verizonGallery2}
-                                alt="Process 2"
-                                className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
-                            />
+                            <img src={verizonGallery2} alt="Process 2" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
                         </div>
                         <div className="aspect-[4/5] w-full overflow-hidden rounded-lg shadow-sm">
-                            <img
-                                src={verizonGallery3}
-                                alt="Process 3"
-                                className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
-                            />
+                            <img src={verizonGallery3} alt="Process 3" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
                         </div>
                     </div>
                 </div>
 
-
-                {/*  --- CONTENT SECTIONS (Placeholders) --- */}
-                <CaseStudySection title="Problem Space">
-                    <p className="body-text text-white/90 mb-8">
-                        Users were unclear about when their data was being processed locally on their device versus sent to the cloud. This ambiguity created privacy concerns and reduced trust in the AI Companion features.
+                <CaseStudySection title="Listening First">
+                    <p className="body-text mb-6">
+                        I started with research. Talking to AI experts gave me a better understanding of local AI. Unlike cloud AI, it offered cost effectiveness, privacy, and offline functionality. But these strengths weren’t obvious to students, and that lack of visibility created a trust gap.
+                    </p>
+                    <p className="body-text">
+                        Through interviews and surveys, another pattern emerged. Students described using AI in specific categories: <strong>writing essays, coding assignments, summarizing lecture notes, and organizing study material.</strong> These categories became important signals: if the Companion could reflect and adapt to these patterns, it would feel more relevant.
                     </p>
                 </CaseStudySection>
 
@@ -106,41 +94,84 @@ const HPCaseStudy = () => {
                     <img src={verizonBanner} alt="Project Banner" className="w-full h-auto object-cover" />
                 </div>
 
-
-                <CaseStudySection title="Solution">
-                    <p className="body-text mb-8">
-                        We introduced clear visual indicators and a guided onboarding flow that explicitly educated users on the different processing modes.
+                <CaseStudySection title="Seeing the Friction Up Close">
+                    <p className="body-text mb-6">
+                        Research insights shaped the direction, but usability testing revealed the details. During think-aloud sessions, I watched students freeze at a blank input box, unsure how to start.
+                    </p>
+                    <ul className="list-disc pl-6 space-y-4 text-muted-foreground text-lg mb-8">
+                        <li><strong className="text-foreground">Hesitation:</strong> Students wandered through the sidebar, scrolling endlessly to find folders or past chats.</li>
+                        <li><strong className="text-foreground">Confusion:</strong> Many couldn’t tell when the system was running locally versus in the cloud, limiting trust.</li>
+                    </ul>
+                    <p className="body-text">
+                        What struck me most wasn’t just the usability issues themselves, it was the hesitation they created. Students weren’t confident in what to do next.
                     </p>
                 </CaseStudySection>
 
-                {/*  --- VIDEO PLACEHOLDERS (Reusing Verizon for layout structure, update sources later) --- */}
-                <CaseStudySection title="Final Design">
-                    <div className="space-y-24">
-                        <div className="space-y-4">
-                            <h3 className="text-2xl font-semibold mb-4">Onboarding Flow</h3>
-                            <p className="body-text mb-4">Guided experience explaining local vs cloud AI.</p>
+                <CaseStudySection title="Designing for Clarity">
+                    <p className="body-text mb-8">
+                        From those insights, the redesign focused on one principle: help students feel confident, not uncertain. That translated into three key changes:
+                    </p>
+
+                    <div className="space-y-12">
+                        <div>
+                            <h4 className="text-xl font-bold text-foreground mb-2">1. Transparent Onboarding</h4>
+                            <p className="body-text mb-4">I designed an onboarding flow that explained when local AI is active and why. Transparency replaced guesswork with understanding.</p>
                             <LazyVideo src={onboardingVideo} poster={verizonThumb} />
                         </div>
 
-                        <div className="space-y-4">
-                            <h3 className="text-2xl font-semibold mb-4">Home Navigation</h3>
-                            <p className="body-text mb-4">Clear mode switching and status indicators.</p>
+                        <div>
+                            <h4 className="text-xl font-bold text-foreground mb-2">2. Guided Beginnings</h4>
+                            <p className="body-text mb-4">I replaced the blank input with suggested prompts, giving students a way to start immediately.</p>
+                            <LazyVideo src={recommendationsVideo} poster={verizonThumb} />
+                        </div>
+
+                        <div>
+                            <h4 className="text-xl font-bold text-foreground mb-2">3. Logical Navigation</h4>
+                            <p className="body-text mb-4">I reorganized the layout, moving **Folders into History**, so retrieval and organization felt intuitive.</p>
                             <LazyVideo src={fullPrototypeVideo} poster={verizonThumb} />
                         </div>
                     </div>
                 </CaseStudySection>
 
+                <CaseStudySection title="Impact">
+                    <p className="body-text mb-8">
+                        Individually, each change felt small. Together, they made the experience feel more personal: students were less hesitant and moved through the interface smoother.
+                    </p>
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+                        <div className="p-6 bg-white/10 rounded-xl backdrop-blur-sm border border-white/10">
+                            <div className="text-4xl font-bold text-blue-400 mb-2">40%</div>
+                            <div className="text-white/80">Improvement in time on task</div>
+                        </div>
+                        <div className="p-6 bg-white/10 rounded-xl backdrop-blur-sm border border-white/10">
+                            <div className="text-4xl font-bold text-blue-400 mb-2">70</div>
+                            <div className="text-white/80">NPS Score</div>
+                        </div>
+                        <div className="p-6 bg-white/10 rounded-xl backdrop-blur-sm border border-white/10">
+                            <div className="text-4xl font-bold text-blue-400 mb-2">High</div>
+                            <div className="text-white/80">Improved discoverability</div>
+                        </div>
+                    </div>
 
-                <CaseStudySection title="Outcome">
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                        <div>
-                            <p className="body-text text-white/90 mb-6">
-                                The new design resulted in a 25% increase in task completion rates for mode-switching tasks and significantly improved user comprehension of privacy features in usability testing.
-                            </p>
-                        </div>
-                        <div>
-                            <img src={verizonDesignSystem} alt="Design System" className="rounded-lg shadow-lg" />
-                        </div>
+                    <div className="mt-16 bg-gray-900/50 p-8 rounded-2xl border border-white/10">
+                        <h3 className="text-xl font-bold text-white mb-4">Lessons from the Process</h3>
+                        <ul className="space-y-4 text-white/80 text-lg">
+                            <li className="flex items-start gap-3">
+                                <span className="text-blue-400 mt-1">•</span>
+                                <span><strong>Onboarding drives trust.</strong> Students engaged more once they understood local vs. cloud AI.</span>
+                            </li>
+                            <li className="flex items-start gap-3">
+                                <span className="text-blue-400 mt-1">•</span>
+                                <span><strong>Navigation tweaks matter.</strong> Moving one feature (Folders) had an outsized effect on efficiency.</span>
+                            </li>
+                            <li className="flex items-start gap-3">
+                                <span className="text-blue-400 mt-1">•</span>
+                                <span><strong>Blank states are risky.</strong> Prompts give students confidence to start.</span>
+                            </li>
+                            <li className="flex items-start gap-3">
+                                <span className="text-blue-400 mt-1">•</span>
+                                <span><strong>Personalization starts with listening.</strong> Insights from student categories guided relevance.</span>
+                            </li>
+                        </ul>
                     </div>
                 </CaseStudySection>
 
