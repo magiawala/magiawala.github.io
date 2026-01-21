@@ -52,8 +52,8 @@ const NuanceoCaseStudy = () => {
                         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-16">
                             {/* Left Column: Title & Role */}
                             <div className="md:col-span-4">
-                                <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Nuanceo</h2>
-                                <div className="text-muted-foreground space-y-1 text-lg">
+                                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Nuanceo</h2>
+                                <div className="text-gray-700 space-y-1 text-lg">
                                     <p>Led User Testing</p>
                                     <p>Front-end Development</p>
                                 </div>
