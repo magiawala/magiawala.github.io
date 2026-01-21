@@ -20,6 +20,7 @@ import fullPrototypeVideo from "@/assets/Full Prototype.webm";
 
 
 import verizonDesignSystem from "@/assets/verizon-design-system.png";
+import LazyVideo from "@/components/LazyVideo";
 
 const VerizonCaseStudy = () => {
   return (
@@ -187,7 +188,7 @@ const VerizonCaseStudy = () => {
               I initially considered a generic onboarding flow, but realized the AI could offer immediate value by prepping the sales pitch. In the final design, I implemented a smart search that retrieves existing business data, equipping reps with key insights before they even start the conversation.
             </p>
             <div className="bg-gray-100 rounded-lg flex items-center justify-center text-gray-400 border border-dashed border-gray-300 overflow-hidden shadow-sm">
-              <video src={onboardingVideo} autoPlay loop muted playsInline className="w-full h-auto" />
+              <LazyVideo src={onboardingVideo} autoPlay loop muted playsInline className="w-full h-auto" />
             </div>
           </div>
         </CaseStudySection>
@@ -199,7 +200,7 @@ const VerizonCaseStudy = () => {
               I explored asking detailed, open-ended questions, but testing showed this slowed down the interaction significantly. My final solution uses simple, guided prompts that help reps capture key business insights quickly without disrupting the natural flow of eye contact and conversation.
             </p>
             <div className="bg-gray-100 rounded-lg flex items-center justify-center text-gray-400 border border-dashed border-gray-300 overflow-hidden shadow-sm">
-              <video src={businessVideo} autoPlay loop muted playsInline className="w-full h-auto" />
+              <LazyVideo src={businessVideo} autoPlay loop muted playsInline className="w-full h-auto" />
             </div>
           </div>
         </CaseStudySection>
@@ -211,7 +212,7 @@ const VerizonCaseStudy = () => {
               I experimented with showing the recommended products by AI, but found that reps want to show more options as that would be more practical . The final design presents a 'Smart Suggestion' that includes transparent reasoning and relevant add-ons and other products, giving reps the confidence to explain why this solution is the perfect fit and customer with multiple choice.
             </p>
             <div className="bg-gray-100 rounded-lg flex items-center justify-center text-gray-400 border border-dashed border-gray-300 overflow-hidden shadow-sm">
-              <video src={recommendationsVideo} autoPlay loop muted playsInline className="w-full h-auto" />
+              <LazyVideo src={recommendationsVideo} autoPlay loop muted playsInline className="w-full h-auto" />
             </div>
           </div>
         </CaseStudySection>
@@ -220,7 +221,7 @@ const VerizonCaseStudy = () => {
         <div className="w-full bg-gray-50 py-16 md:py-24 mb-16">
           <div className="container mx-auto px-6 md:px-12 lg:px-16">
             <div className="bg-gray-200 rounded-lg shadow-sm flex items-center justify-center text-gray-400 border border-dashed border-gray-300 overflow-hidden">
-              <video src={fullPrototypeVideo} autoPlay loop muted playsInline className="w-full h-auto" />
+              <LazyVideo src={fullPrototypeVideo} autoPlay loop muted playsInline className="w-full h-auto" />
             </div>
             <p className="text-center text-muted-foreground mt-6 text-sm md:text-base font-medium">Final Sales Assist Tool Design</p>
           </div>
@@ -230,14 +231,14 @@ const VerizonCaseStudy = () => {
         <CaseStudySection label="THE SOLUTION" title="Outcome">
           <div className="space-y-12">
             <div>
-              <h3 className="subsection-title flex items-center gap-2">🤝 Trust Tools</h3>
+              <h3 className="subsection-title flex items-center gap-2">Trust Tools</h3>
               <p className="body-text">
                 I collaborated with the engineering team to ensure the AI's logic was transparent. We introduced "Why this recommendation?" tooltips, which helped reps trust the suggestion rather than feeling like the tool was replacing their judgment.
               </p>
             </div>
 
             <div>
-              <h3 className="subsection-title flex items-center gap-2">💎 Scalable Design System</h3>
+              <h3 className="subsection-title flex items-center gap-2">Scalable Design System</h3>
               <p className="body-text mb-6">
                 I designed the project to scale as a reusable tablet framework for future Verizon SMB tools. I detailed development notes and handed off an organized Figma file to allow engineers to implement the recommendation card structure across other product lines without needing custom design work.
               </p>
