@@ -190,19 +190,6 @@ const VerizonCaseStudy = () => {
           </div>
         </CaseStudySection>
 
-        {/* Design Iteration Section */}
-        {/* Solution Section: Questions */}
-        <CaseStudySection label="SOLUTION" title="Company Onboarding">
-          <div className="mb-12">
-            <p className="body-text mb-6">
-              I initially considered a generic onboarding flow, but realized the AI could offer immediate value by prepping the sales pitch. In the final design, I implemented a smart search that retrieves existing business data, equipping reps with key insights before they even start the conversation.
-            </p>
-            <div className="bg-gray-100 rounded-lg flex items-center justify-center text-gray-400 border border-dashed border-gray-300 overflow-hidden shadow-sm">
-              <LazyVideo src={onboardingVideo} autoPlay loop muted playsInline className="w-full h-auto" />
-            </div>
-          </div>
-        </CaseStudySection>
-
         {/* Solution Section: Recommendation */}
         <CaseStudySection label="SOLUTION" title="Discovery Questions">
           <div className="mb-12">
@@ -227,18 +214,9 @@ const VerizonCaseStudy = () => {
           </div>
         </CaseStudySection>
 
-        {/* Full Design Video Section */}
-        <div className="w-full bg-gray-50 py-16 md:py-24 mb-16">
-          <div className="container mx-auto px-6 md:px-12 lg:px-16">
-            <div className="bg-gray-200 rounded-lg shadow-sm flex items-center justify-center text-gray-400 border border-dashed border-gray-300 overflow-hidden">
-              <LazyVideo src={fullPrototypeVideo} autoPlay loop muted playsInline className="w-full h-auto" />
-            </div>
-            <p className="text-center text-muted-foreground mt-6 text-sm md:text-base font-medium">Final Sales Assist Tool Design</p>
-          </div>
-        </div>
 
         {/* Outcome Section */}
-        <CaseStudySection label="THE SOLUTION" title="Outcome">
+        <CaseStudySection title="Outcome">
           <div className="space-y-12">
             <div>
               <h3 className="subsection-title flex items-center gap-2">Trust Tools</h3>
@@ -262,6 +240,17 @@ const VerizonCaseStudy = () => {
             </div>
           </div>
         </CaseStudySection>
+
+
+        {/* Full Design Video Section */}
+        <div className="w-full bg-gray-50 py-16 md:py-24 mb-16">
+          <div className="container mx-auto px-6 md:px-12 lg:px-16">
+            <div className="bg-gray-200 rounded-lg shadow-sm flex items-center justify-center text-gray-400 border border-dashed border-gray-300 overflow-hidden">
+              <LazyVideo src={fullPrototypeVideo} autoPlay loop muted playsInline className="w-full h-auto" />
+            </div>
+            <p className="text-center text-muted-foreground mt-6 text-sm md:text-base font-medium">Final Sales Assist Tool Design</p>
+          </div>
+        </div>
 
 
         {/* Takeaways Section */}

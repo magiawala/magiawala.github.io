@@ -5,7 +5,17 @@ const ScrollToTop = () => {
     const { pathname } = useLocation();
 
     useEffect(() => {
-        window.scrollTo(0, 0);
+        // Force instant scroll to top on route change
+        document.documentElement.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: "instant", // Critical: prevents smooth scrolling interference
+        });
+        document.body.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: "instant"
+        });
     }, [pathname]);
 
     return null;
