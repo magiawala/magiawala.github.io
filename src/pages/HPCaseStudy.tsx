@@ -36,9 +36,8 @@ const HPCaseStudy = () => {
                     role="Product Designer"
                     timeline="Fall 2024"
                     tools="Figma, Testing"
-                    team="HP Design Team"
+                    team="HP AI Design Team"
                     heroImage={hpHero}
-                    imageClassName="scale-x-[-1]"
                     accentColor="from-blue-600/90 to-blue-800/80"
                 />
 
