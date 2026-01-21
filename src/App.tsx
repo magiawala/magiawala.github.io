@@ -7,6 +7,7 @@ import Home from "./pages/Home";
 import VerizonCaseStudy from "./pages/VerizonCaseStudy";
 import Resume from "./pages/Resume";
 import NotFound from "./pages/NotFound";
+import ScrollToTop from "./components/ScrollToTop";
 
 const queryClient = new QueryClient();
 
@@ -16,6 +17,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <HashRouter>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/verizon" element={<VerizonCaseStudy />} />

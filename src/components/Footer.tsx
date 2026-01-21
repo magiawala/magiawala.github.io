@@ -30,13 +30,13 @@ const Footer = () => {
   };
 
   return (
-    <footer id="contact" className="site-footer py-16 md:py-24">
+    <footer id="contact" className="site-footer py-16 md:py-24 text-left">
       <div className="container mx-auto px-6 md:px-12 lg:px-16">
-        <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-foreground mb-12">
+        <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-foreground mb-12 text-left">
           Thanks for stopping by, let's chat!
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
+        <div className="flex flex-col md:flex-row gap-8 md:gap-16 items-start text-left">
           {/* Contact Me */}
           <div>
             <h3 className="footer-section-title">CONTACT ME</h3>
