@@ -33,7 +33,7 @@ const HPCaseStudy = () => {
                     subtitle="Designed an intuitive onboarding and home screen indicators for AI PC Companion experience clarifying AI modes (Local vs. Cloud), optimizing task completion by 25%."
                     role="Product Designer"
                     timeline="Fall 2024"
-                    tools="Figma, Testing"
+                    tools="Research, Testing"
                     team="HP AI Design Team"
                     heroImage={hpHero}
                     accentColor="from-blue-600/90 to-blue-800/80"
@@ -255,8 +255,13 @@ const HPCaseStudy = () => {
                         </span>
                     </Link>
 
-                    {/* Next Project - Disabled or loop back */}
-                    {/* <Link to="/verizon" className="group text-right p-4 -mr-4 rounded-lg hover:bg-gray-50 transition-colors"> ... </Link> */}
+                    {/* Next Project */}
+                    <Link to="/nuanceo" className="group text-right p-4 -mr-4 rounded-lg hover:bg-gray-50 transition-colors">
+                        <span className="block text-xs font-bold text-gray-400 tracking-wider mb-2 uppercase">Next</span>
+                        <span className="text-xl md:text-2xl font-bold text-foreground group-hover:text-gray-600 transition-colors">
+                            Nuanceo
+                        </span>
+                    </Link>
                 </div>
             </div>
 

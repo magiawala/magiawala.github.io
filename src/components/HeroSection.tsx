@@ -10,10 +10,10 @@ const HeroSection = () => {
       behavior: "smooth"
     });
   };
-  return <section className="min-h-screen flex items-start justify-center px-6 md:px-12 lg:px-16 pt-20 md:pt-28">
+  return <section className="min-h-[50vh] md:min-h-screen flex items-start justify-center px-6 md:px-12 lg:px-16 pt-20 md:pt-28 pb-10 md:pb-0">
     <div className="w-full max-w-4xl mx-auto">
       {/* Wrapper for hover effect */}
-      <div className="relative inline-block p-10" onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
+      <div className="relative inline-block p-5 md:p-10" onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
         {/* Content Layer */}
         <div className="relative z-10">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-normal text-foreground/70 leading-tight mb-6">
@@ -21,16 +21,16 @@ const HeroSection = () => {
             <span className="font-bold text-foreground">Devanshu Magiawala</span>
           </h1>
 
-          <p className="text-lg md:text-xl text-foreground/70 mb-10 max-w-xl">
+          <p className="text-lg md:text-xl text-foreground/70 mb-6 md:mb-10 max-w-xl">
             Building digital experiences with creativity and code.
           </p>
 
           {/* Company Logos */}
-          <div className="flex gap-8 items-center mb-10">
-            <img src={hpLogo} alt="HP Logo" className="h-8 md:h-10 w-auto opacity-50 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-300" />
-            <img src={verizonLogo} alt="Verizon Logo" className="h-6 md:h-7 w-auto opacity-50 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-300" />
-            <img src={integrateLogo} alt="Integrate Logo" className="h-6 md:h-7 w-auto opacity-50 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-300" />
-            <img src={genuinLogo} alt="Genuin Logo" className="h-8 md:h-10 w-auto opacity-50 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-300" />
+          <div className="flex gap-5 md:gap-8 items-center mb-6 md:mb-10">
+            <img src={hpLogo} alt="HP Logo" className="h-6 md:h-10 w-auto opacity-50 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-300" />
+            <img src={verizonLogo} alt="Verizon Logo" className="h-4 md:h-7 w-auto opacity-50 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-300" />
+            <img src={integrateLogo} alt="Integrate Logo" className="h-4 md:h-7 w-auto opacity-50 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-300" />
+            <img src={genuinLogo} alt="Genuin Logo" className="h-6 md:h-10 w-auto opacity-50 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-300" />
           </div>
 
           {/* CTA Button - Crimson border */}

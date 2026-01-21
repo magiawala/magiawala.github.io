@@ -5,9 +5,11 @@ interface CaseStudyHeroProps {
   timeline: string;
   tools?: string;
   team: string;
-  heroImage: string;
+  heroImage?: string;
   accentColor?: string;
   imageClassName?: string;
+  backgroundColor?: string;
+  imageFit?: "cover" | "contain" | "fill";
 }
 
 const CaseStudyHero = ({
@@ -20,16 +22,23 @@ const CaseStudyHero = ({
   heroImage,
   accentColor = "from-airbnb-red/80 to-airbnb-red/60",
   imageClassName = "",
+  backgroundColor,
+  imageFit = "cover",
 }: CaseStudyHeroProps) => {
   return (
-    <section className="w-full min-h-screen flex items-end pt-16">
+    <section
+      className="w-full min-h-screen flex items-end pt-16"
+      style={backgroundColor ? { backgroundColor } : undefined}
+    >
       {/* Background Image with Gradient Overlay */}
       <div className="absolute top-0 left-0 w-full h-screen z-0">
-        <img
-          src={heroImage}
-          alt={title}
-          className={`w-full h-full object-cover ${imageClassName}`}
-        />
+        {heroImage && (
+          <img
+            src={heroImage}
+            alt={title}
+            className={`w-full h-full object-${imageFit} ${imageClassName}`}
+          />
+        )}
         <div className={`absolute inset-0 bg-gradient-to-br ${accentColor}`} />
       </div>
 

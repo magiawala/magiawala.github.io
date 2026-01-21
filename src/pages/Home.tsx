@@ -5,7 +5,7 @@ import HeroSection from "@/components/HeroSection";
 import Footer from "@/components/Footer";
 import verizonThumb from "@/assets/verizon-thumb.png";
 import hpThumb from "@/assets/hp-thumb.png";
-import nuanceoThumb from "@/assets/nuanceo-hero.png";
+import nuanceoThumb from "@/assets/nuanceo-card.jpg";
 import hpLogo from "@/assets/logos/logo2.png";
 import verizonLogo from "@/assets/logos/verizon_new.png";
 import integrateLogo from "@/assets/logos/integrate_new.png";
@@ -63,7 +63,7 @@ const Home = () => {
                             </h2>
                             <div className="project-tags">
                                 <span className="tag-pill tag-verizon">Product Design</span>
-                                <span className="tag-pill tag-verizon">AI Design</span>
+                                <span className="tag-pill tag-verizon">AI Tool</span>
                             </div>
                             <p className="project-desc-text">
                                 Designed an AI sales assist tool for Verizon Business, shaping early
@@ -86,7 +86,9 @@ const Home = () => {
                                 Revamped onboarding and home navigation for HP AI Companion
                             </h2>
                             <div className="project-tags">
-                                <span className="tag-pill tag-hp">Experience Design</span>
+
+                                <span className="tag-pill tag-hp">User Research</span>
+                                <span className="tag-pill tag-hp">AI Design</span>
                             </div>
                             <p className="project-desc-text">
                                 Designed an intuitive onboarding and home screen indicators for AI PC
@@ -110,7 +112,8 @@ const Home = () => {
                                 Analyzing art critique for student-teacher interactions
                             </h2>
                             <div className="project-tags">
-                                <span className="tag-pill" style={{ backgroundColor: '#F3E8FF', color: '#6B21A8' }}>User Research</span>
+                                <span className="tag-pill" style={{ backgroundColor: '#DBEAFE', color: '#1E40AF' }}>User Testing</span>
+                                <span className="tag-pill" style={{ backgroundColor: '#DBEAFE', color: '#1E40AF' }}>Heuristics</span>
                             </div>
                             <p className="project-desc-text">
                                 Led user testing and redesign of an art critique platform, resulting in a 30% faster task completion and 4x increase in daily active users.

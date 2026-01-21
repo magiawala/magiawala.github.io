@@ -34,7 +34,7 @@ const VerizonCaseStudy = () => {
           title="Defined product flows and testing for Verizon small business sales teams"
           subtitle="Designed an AI sales assist tool for Verizon Business, shaping early product concepts and helping SMB sales teams close deals faster."
           role="Product Designer"
-          timeline="Summer 2024"
+          timeline="Winter 2025"
           tools="Figma, AI Design"
           team="Verizon SMB team"
           heroImage={heroVerizon}
@@ -250,7 +250,7 @@ const VerizonCaseStudy = () => {
         {/* Photo Gallery (Overview Images) */}
         <div className="w-full bg-gray-50 py-16 md:py-24 mb-16">
           <div className="container mx-auto px-6 md:px-12 lg:px-16">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-6">
               <div className="aspect-[4/5] overflow-hidden rounded-md shadow-sm">
                 <img
                   src={verizonGallery1}
@@ -284,7 +284,6 @@ const VerizonCaseStudy = () => {
       {/* Project Navigation */}
       <div className="container mx-auto px-6 md:px-12 lg:px-16 py-12 md:py-24">
         <div className="flex justify-end items-center">
-
 
           {/* Next Project */}
           <Link to="/hp" className="group text-right p-4 -mr-4 rounded-lg hover:bg-gray-50 transition-colors">
