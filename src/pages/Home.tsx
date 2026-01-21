@@ -107,7 +107,7 @@ const Home = () => {
                             <img src={nuanceoThumb} alt="Nuanceo Project" />
                         </div>
                         <div className="project-details">
-                            <span className="role-label">Product Designer</span>
+                            <span className="role-label">Design Engineer</span>
                             <h2 className="project-title-large">
                                 Analyzing art critique for student-teacher interactions
                             </h2>
