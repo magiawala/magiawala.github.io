@@ -18,6 +18,7 @@ import recommendationsVideo from "@/assets/Recommendations.webm";
 import fullPrototypeVideo from "@/assets/Full Prototype.webm";
 
 
+import hpHero from "@/assets/hp-hero.png";
 import HPBanner from "@/assets/HP banner.png";
 import hpThinkAloud from "@/assets/hp-think-aloud.png";
 import LazyVideo from "@/components/LazyVideo";
@@ -36,8 +37,9 @@ const HPCaseStudy = () => {
                     timeline="Fall 2024"
                     tools="Figma, Testing"
                     team="HP Design Team"
-                    heroImage={heroVerizon} // TODO: Replace with HP hero image
-                    accentColor="from-blue-600/90 to-blue-800/80" // Blue for HP
+                    heroImage={hpHero}
+                    imageClassName="scale-x-[-1]"
+                    accentColor="from-blue-600/90 to-blue-800/80"
                 />
 
                 {/* Project Overview / Intro Section */}
