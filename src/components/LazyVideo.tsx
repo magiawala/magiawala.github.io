@@ -37,7 +37,7 @@ const LazyVideo: React.FC<LazyVideoProps> = ({ src, className, placeholderClass,
     return (
         <video
             ref={videoRef}
-            className={className}
+            className={`${className} transition-opacity duration-700 ease-in-out ${isIntersecting ? "opacity-100" : "opacity-0"}`}
             src={isIntersecting ? src : undefined}
             {...props}
         />
