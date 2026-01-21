@@ -162,7 +162,7 @@ const HPCaseStudy = () => {
 
                         </li>
                     </ul>
-                    <div>
+                    <div className="mt-16">
                         <img src={hpThinkAloud} alt="Think Aloud" className="rounded-lg shadow-lg" />
                     </div>
                     <h3 className="subsection-title mt-12">Insights</h3>
@@ -179,18 +179,24 @@ const HPCaseStudy = () => {
                     <div className="space-y-12">
                         <div>
                             <h3 className="subsection-title">Onboarding</h3>
-                            <p className="text-xl text-foreground font-semibold mb-2">Addressing "Awareness of Local vs. Cloud AI"</p>
+                            {/* <p className="text-xl text-foreground font-semibold mb-2">Addressing "Awareness of Local vs. Cloud AI"</p> */}
                             <p className="body-text mb-4">
-                                I explored letting users manually toggle between "Cloud" and "Local" AI, but research showed this was overwhelming. My final solution uses a <strong className="text-foreground">Transparent Onboarding Flow</strong> that explicitly highlights when Local AI is active. This education-first approach replaces user guesswork with immediate trust in the device’s privacy.
+                                The previous version lacked an onboarding flow entirely, dropping students into the tool with no context. In the final design, I introduced a dedicated Welcome Experience that captures student interests to personalize the feed, explains the tool's core capabilities, and explicitly addresses data privacy to build trust in the Local AI features from day one.
                             </p>
+                            <div className="bg-gray-100 rounded-lg flex items-center justify-center text-gray-400 border border-dashed border-gray-300 overflow-hidden shadow-sm">
+                                <LazyVideo src={businessVideo} autoPlay loop muted playsInline className="w-full h-auto" />
+                            </div>
                         </div>
 
                         <div>
                             <h3 className="subsection-title">Navigation & Guided Home</h3>
-                            <p className="text-xl text-foreground font-semibold mb-2">Addressing "Poor Navigation" & "Blank Slate Freeze"</p>
+                            {/* <p className="text-xl text-foreground font-semibold mb-2">Addressing "Poor Navigation" & "Blank Slate Freeze"</p> */}
                             <p className="body-text mb-4">
-                                I experimented with a minimal "chat-only" interface, but found that students would freeze at the blank canvas. The final design presents <strong className="text-foreground">Task-Based Prompts</strong> (like "Coding" or "Summarizing") that align with their daily habits. I also reorganized the layout to fix the "Discover vs. Perform" confusion, moving files and chats into a intuitive Unified History.
+                                The navigation buried past work behind obscure icons, making it difficult for users to resume tasks. In the final design, I prioritized History Visibility by moving past sessions to the sidebar. This ensures users can instantly see and access their previous research, transforming the tool from a 'one-off' chat into a reliable long-term study partner
                             </p>
+                            <div className="bg-gray-100 rounded-lg flex items-center justify-center text-gray-400 border border-dashed border-gray-300 overflow-hidden shadow-sm">
+                                <LazyVideo src={businessVideo} autoPlay loop muted playsInline className="w-full h-auto" />
+                            </div>
                         </div>
                     </div>
                 </CaseStudySection>
@@ -220,9 +226,7 @@ const HPCaseStudy = () => {
                                 The new design resulted in a 25% increase in task completion rates for mode-switching tasks and significantly improved user comprehension of privacy features in usability testing.
                             </p>
                         </div>
-                        <div>
-                            <img src={hpThinkAloud} alt="Design System" className="rounded-lg shadow-lg" />
-                        </div>
+
                     </div>
                 </CaseStudySection>
 
