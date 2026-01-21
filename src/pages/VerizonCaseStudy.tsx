@@ -65,38 +65,17 @@ const VerizonCaseStudy = () => {
           </div>
         </section>
 
-        {/* Photo Gallery (Overview Images) */}
-        <div className="w-full bg-gray-50 py-16 md:py-24 mb-16">
+        {/* Banner Image */}
+        <div className="w-full mb-16 md:mb-24 mt-8">
           <div className="container mx-auto px-6 md:px-12 lg:px-16">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="aspect-[4/5] overflow-hidden rounded-md shadow-sm">
-                <img
-                  src={verizonGallery1}
-                  alt="Verizon Team Interaction"
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
-                />
-              </div>
-              <div className="aspect-[4/5] overflow-hidden rounded-md shadow-sm">
-                <img
-                  src={verizonGallery2}
-                  alt="Verizon Team Group Photo"
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
-                />
-              </div>
-              <div className="aspect-[4/5] overflow-hidden rounded-md shadow-sm">
-                <img
-                  src={verizonGallery3}
-                  alt="Verizon Business Store Display"
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
-                />
-              </div>
+            <div className="rounded-lg overflow-hidden shadow-sm">
+              <img src={verizonBanner} alt="Verizon Business Workflow" className="w-full h-auto" />
             </div>
           </div>
         </div>
 
-
         {/* Context Section */}
-        <div id="case-study-context">
+        <div id="case-study-context" className="mb-2">
           <CaseStudySection title="Context">
             <p className="body-text mb-6">
               Verizon Business offers high-value solutions like cloud security and dedicated networks.
@@ -135,14 +114,9 @@ const VerizonCaseStudy = () => {
           </p>
         </CaseStudySection>
 
-        {/* Banner Image */}
-        <div className="w-full mb-16 md:mb-24 mt-8">
-          <div className="container mx-auto px-6 md:px-12 lg:px-16">
-            <div className="rounded-lg overflow-hidden shadow-sm">
-              <img src={verizonBanner} alt="Verizon Business Workflow" className="w-full h-auto" />
-            </div>
-          </div>
-        </div>
+
+
+
 
         {/* Research Section */}
         <CaseStudySection label="DISCOVERY" title="Research">
@@ -243,14 +217,16 @@ const VerizonCaseStudy = () => {
 
 
         {/* Full Design Video Section */}
-        <div className="w-full bg-gray-50 py-16 md:py-24 mb-16">
+        {/* <div className="w-full bg-gray-50 py-16 md:py-24 mb-16">
           <div className="container mx-auto px-6 md:px-12 lg:px-16">
             <div className="bg-gray-200 rounded-lg shadow-sm flex items-center justify-center text-gray-400 border border-dashed border-gray-300 overflow-hidden">
               <LazyVideo src={fullPrototypeVideo} autoPlay loop muted playsInline className="w-full h-auto" />
             </div>
             <p className="text-center text-muted-foreground mt-6 text-sm md:text-base font-medium">Final Sales Assist Tool Design</p>
           </div>
-        </div>
+        </div> */}
+
+
 
 
         {/* Takeaways Section */}
@@ -271,6 +247,38 @@ const VerizonCaseStudy = () => {
             </div>
           </div>
         </CaseStudySection>
+        {/* Photo Gallery (Overview Images) */}
+        <div className="w-full bg-gray-50 py-16 md:py-24 mb-16">
+          <div className="container mx-auto px-6 md:px-12 lg:px-16">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="aspect-[4/5] overflow-hidden rounded-md shadow-sm">
+                <img
+                  src={verizonGallery1}
+                  alt="Verizon Team Interaction"
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+              <div className="aspect-[4/5] overflow-hidden rounded-md shadow-sm">
+                <img
+                  src={verizonGallery2}
+                  alt="Verizon Team Group Photo"
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+              <div className="aspect-[4/5] overflow-hidden rounded-md shadow-sm">
+                <img
+                  src={verizonGallery3}
+                  alt="Verizon Business Store Display"
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
       </main>
 
       {/* Project Navigation */}

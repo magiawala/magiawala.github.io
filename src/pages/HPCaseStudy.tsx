@@ -63,6 +63,18 @@ const HPCaseStudy = () => {
                     </div>
                 </section>
 
+
+
+                {/* Banner Image */}
+                <div className="w-full mb-16 md:mb-24 mt-8">
+                    <div className="container mx-auto px-6 md:px-12 lg:px-16">
+                        <div className="rounded-lg overflow-hidden shadow-sm">
+                            <img src={HPBanner} alt="Verizon Business Workflow" className="w-full h-auto" />
+                        </div>
+                    </div>
+                </div>
+
+
                 {/* Context Section */}
                 <div id="case-study-context">
                     <CaseStudySection title="Context">
@@ -95,12 +107,6 @@ const HPCaseStudy = () => {
                     </p>
                 </CaseStudySection>
 
-                {/* Banner Image */}
-                <div className="w-full">
-                    <img src={HPBanner} alt="Project Banner" className="w-full h-auto object-cover" />
-                </div>
-
-
                 {/* Impact Section */}
                 <CaseStudySection label="IMPACT" title="Key Results">
                     <div className="flex flex-col gap-4">
@@ -127,6 +133,10 @@ const HPCaseStudy = () => {
                         </div>
                     </div>
                 </CaseStudySection>
+
+
+
+
 
                 {/* Discovery Section */}
                 <CaseStudySection label="DISCOVERY" title="Research Questions">
