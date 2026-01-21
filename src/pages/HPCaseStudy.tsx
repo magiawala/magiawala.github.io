@@ -17,7 +17,7 @@ import fullPrototypeVideo from "@/assets/Full Prototype.webm";
 
 
 import hpHero from "@/assets/hp-hero-2.png";
-import HPBanner from "@/assets/HP banner.png";
+import HPBanner from "@/assets/HP Banner.png";
 import hpThinkAloud from "@/assets/hp-think-aloud.png";
 import LazyVideo from "@/components/LazyVideo";
 
