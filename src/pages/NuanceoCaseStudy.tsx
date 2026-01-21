@@ -42,7 +42,7 @@ const NuanceoCaseStudy = () => {
                     tools="Figma, React, Node.js"
                     team="3 Designers, 2 Engineers, 1 PM"
                     heroImage={nuanceoHeroVenice}
-                    accentColor="from-transparent to-transparent"
+                    accentColor="from-black/60 to-black/40"
                     imageClassName="scale-x-[-1]"
                 />
 
