@@ -2,11 +2,24 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import CaseStudyHero from "@/components/CaseStudyHero";
 import CaseStudySection from "@/components/CaseStudySection";
+import { Link } from "react-router-dom";
 import CaseStudyImage from "@/components/CaseStudyImage";
 
 import verizonThumb from "@/assets/verizon-thumb.png";
 import heroVerizon from "@/assets/hero-verizon.jpg";
 import researchImage from "@/assets/research-process.jpg"; // Keeping generic for now, or replace if better asset found
+import verizonOverview from "@/assets/verizon-overview.png"; // Keeping if needed, though replaced
+import verizonGallery1 from "@/assets/verizon-gallery-1.jpg";
+import verizonGallery2 from "@/assets/verizon-gallery-2.jpg";
+import verizonGallery3 from "@/assets/verizon-gallery-3.png";
+
+import onboardingVideo from "@/assets/Onboarding.webm";
+import businessVideo from "@/assets/Understanding Business.webm";
+import recommendationsVideo from "@/assets/Recommendations.webm";
+import fullPrototypeVideo from "@/assets/Full Prototype.webm";
+
+
+import verizonDesignSystem from "@/assets/verizon-design-system.png";
 
 const VerizonCaseStudy = () => {
   return (
@@ -32,44 +45,48 @@ const VerizonCaseStudy = () => {
             <div className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-16">
               {/* Left Column: Title & Role */}
               <div className="md:col-span-4">
-                <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Verizon</h2>
+                <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Verizon Business</h2>
                 <div className="text-muted-foreground space-y-1 text-lg">
-                  <p>Summer 2024 Verizon SMB Team</p>
-                  <p>Product Design Intern</p>
+
+                  <p>Product Designer</p>
                 </div>
               </div>
 
               {/* Right Column: Narrative */}
               <div className="md:col-span-8">
                 <p className="body-text mb-6">
-                  I interned with the Verizon SMB (Small Medium Business) team, where I worked on designing
-                  internal tools and sales assist experiences to improve the workflow efficiency of sales representatives.
+                  I worked as a Product Designer with Verizon Sales team, where I collaborated with AI engineers to design a tablet-first sales enablement tool. My goal was to empower sales representatives to navigate complex B2B conversations and increase confidence in selling "above-network" solutions.
                 </p>
-                <p className="body-text">
-                  I had an amazing experience working on various projects throughout the summer and focused
-                  on my keystone project: designing an AI-powered sales cockpit that allows agents to find product
-                  bundles in a non-invasive and functional way.
-                </p>
+
               </div>
             </div>
           </div>
         </section>
 
-        {/* Photo Gallery (Gray Background) */}
+        {/* Photo Gallery (Overview Images) */}
         <div className="w-full bg-gray-50 py-16 md:py-24 mb-16">
           <div className="container mx-auto px-6 md:px-12 lg:px-16">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {/* Placeholder 1 */}
-              <div className="aspect-[3/4] bg-gray-200 rounded-sm flex items-center justify-center text-gray-400 italic">
-                [Team Photo 1]
+              <div className="aspect-[4/5] overflow-hidden rounded-md shadow-sm">
+                <img
+                  src={verizonGallery1}
+                  alt="Verizon Team Interaction"
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                />
               </div>
-              {/* Placeholder 2 */}
-              <div className="aspect-[3/4] bg-gray-200 rounded-sm flex items-center justify-center text-gray-400 italic">
-                [Office Photo]
+              <div className="aspect-[4/5] overflow-hidden rounded-md shadow-sm">
+                <img
+                  src={verizonGallery2}
+                  alt="Verizon Team Group Photo"
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                />
               </div>
-              {/* Placeholder 3 */}
-              <div className="aspect-[3/4] bg-gray-200 rounded-sm flex items-center justify-center text-gray-400 italic">
-                [Team Photo 2]
+              <div className="aspect-[4/5] overflow-hidden rounded-md shadow-sm">
+                <img
+                  src={verizonGallery3}
+                  alt="Verizon Business Store Display"
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                />
               </div>
             </div>
           </div>
@@ -80,23 +97,21 @@ const VerizonCaseStudy = () => {
         <div id="case-study-context">
           <CaseStudySection title="Context">
             <p className="body-text mb-6">
-              Verizon Business serves millions of small and medium-sized businesses.
-              The sales teams needed a more efficient way to access product information and close deals.
+              Verizon Business offers high-value solutions like cloud security and dedicated networks.
+              The sales teams needed a more efficient way to recommend them by identifying customer needs and closing deals faster.
             </p>
             <p className="body-text mb-8">
               My project focused on{" "}
               <strong>
                 designing an AI-powered sales assist tool
               </strong>{" "}
-              that integrates seamlessly into their existing workflows.
+              that integrates seamlessly into their existing in-store workflows.
               I worked on defining product flows and conducting testing to ensure the solution met the diverse needs of sales agents.
             </p>
 
-            <h3 className="subsection-title">👩‍💻 Stakeholders</h3>
+            <h3 className="subsection-title">Stakeholders</h3>
             <p className="body-text">
-              I collaborated closely with product managers, engineers, and other designers
-              to ensure the AI features were technically feasible and aligned with business goals.
-            </p>
+              I had to continuously communicate with technical and business stakeholders to align on feasibility and business goals. I checked in with AI engineers to understand the limitations of the recommendation engine and proposed UI solutions that masked latency.            </p>
           </CaseStudySection>
         </div>
 
@@ -106,7 +121,7 @@ const VerizonCaseStudy = () => {
         <CaseStudySection title="Problem">
           <div className="mb-6">
             <h3 className="subsection-title">
-              ⚡️ The Challenge:
+              The Challenge:
             </h3>
             <p className="text-lg md:text-xl text-foreground font-medium mb-6">
               How might we help sales reps effectively recommend business solutions to smb customers and meet their needs?
@@ -118,91 +133,166 @@ const VerizonCaseStudy = () => {
           </p>
         </CaseStudySection>
 
-        {/* Research Section - NEW */}
+        {/* Research Section */}
         <CaseStudySection label="DISCOVERY" title="Research">
           <p className="body-text mb-6">
-            We conducted interviews with 10+ sales representatives to understand their current pain points.
-            Key insights revealed that searching for compatibility information was the biggest bottleneck.
+            My first step was to understand the constraints of the physical store environment. I researched existing system and shadowed reps during customer interactions. I conducted user interviews with business reps to learn how they currently found customer information and neeed. They revealed that they often relied on memory or "questionaire sheet" because there were no digital tools.
           </p>
-          <div className="py-12 bg-gray-50 mb-8 flex flex-col justify-center items-center text-gray-400 italic rounded-lg border border-dashed border-gray-300">
-            <span className="mb-2">[User Research Findings / Affinity Map Placeholder]</span>
-            <span className="text-sm">Image: Research synthesis and key themes</span>
+
+          <div className="flex flex-col gap-6 mb-8">
+            <blockquote className="border-l-4 border-red-600 pl-6 py-2 italic text-muted-foreground bg-red-50/10 dark:bg-red-900/5 rounded-r-lg">
+              <p className="mb-2">"I am not always available at the store as I have 5 stores under me."</p>
+              <footer className="text-sm font-semibold text-foreground text-left not-italic">— Business Representative</footer>
+            </blockquote>
+
+            <blockquote className="border-l-4 border-red-600 pl-6 py-2 italic text-muted-foreground bg-red-50/10 dark:bg-red-900/5 rounded-r-lg">
+              <p className="mb-2">"I don't know about the business solution that verizon provides above the network. When interacting with customers, I'm afraid I'll quote the wrong thing so I just take their information and send it to online customer support."</p>
+              <footer className="text-sm font-semibold text-foreground text-left not-italic">— Sales Representative Manager</footer>
+            </blockquote>
           </div>
         </CaseStudySection>
 
-        {/* Ideation Section - NEW */}
-        <CaseStudySection label="IDEATION" title="Wireframing">
-          <p className="body-text mb-6">
-            I explored multiple modalities for the AI assistant, ranging from a passive side-panel to an active conversational interface.
-            Low-fidelity sketches helped us quickly validate flows with stakeholders.
-          </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
-            <div className="h-48 bg-gray-50 flex justify-center items-center text-gray-400 italic rounded-lg border border-dashed border-gray-300">
-              [Sketch 1 Placeholder]
+        {/* Impact Section */}
+        <CaseStudySection label="IMPACT" title="Key Results">
+          <div className="flex flex-col gap-4">
+            {/* Metric 1 */}
+            <div className="p-6 bg-gray-50 rounded-xl">
+              <p className="text-lg md:text-xl text-foreground">
+                <span className="font-bold text-red-600 mr-1">30%</span>
+                reduction in customer interaction time
+              </p>
             </div>
-            <div className="h-48 bg-gray-50 flex justify-center items-center text-gray-400 italic rounded-lg border border-dashed border-gray-300">
-              [Sketch 2 Placeholder]
+
+            {/* Metric 2 */}
+            <div className="p-6 bg-gray-50 rounded-xl">
+              <p className="text-lg md:text-xl text-foreground">
+                Saves reps <span className="font-bold text-foreground mx-1">2hrs</span> a day and attend more customers
+              </p>
+            </div>
+
+            {/* Metric 3 */}
+            <div className="p-6 bg-gray-50 rounded-xl">
+              <p className="text-lg md:text-xl text-foreground">
+                Net Promoter Score (NPS) of <span className="font-bold text-foreground mx-1">72</span> for the system
+              </p>
             </div>
           </div>
         </CaseStudySection>
 
-        {/* Design System / UI Section - NEW */}
-        <CaseStudySection label="VISUAL DESIGN" title="Design System">
-          <p className="body-text mb-6">
-            Leveraging Verizon's VDS (Verizon Design System), I created high-fidelity components that felt native to the agent workspace
-            while introducing distinct AI-specific indicators.
-          </p>
-          <div className="py-20 bg-gray-50 mb-8 flex justify-center items-center text-gray-400 italic rounded-lg border border-dashed border-gray-300">
-            [Design System Components & UI Kit Placeholder]
+        {/* Design Iteration Section */}
+        {/* Solution Section: Questions */}
+        <CaseStudySection label="SOLUTION" title="Company Onboarding">
+          <div className="mb-12">
+            <p className="body-text mb-6">
+              I initially considered a generic onboarding flow, but realized the AI could offer immediate value by prepping the sales pitch. In the final design, I implemented a smart search that retrieves existing business data, equipping reps with key insights before they even start the conversation.
+            </p>
+            <div className="bg-gray-100 rounded-lg flex items-center justify-center text-gray-400 border border-dashed border-gray-300 overflow-hidden shadow-sm">
+              <video src={onboardingVideo} autoPlay loop muted playsInline className="w-full h-auto" />
+            </div>
           </div>
         </CaseStudySection>
 
-        {/* Final Solution Section - NEW */}
-        <CaseStudySection label="THE SOLUTION" title="Final Designs">
-          <p className="body-text mb-6">
-            The final redesign integrated the AI assistant directly into the quote configuration flow.
-            Agents can now ask natural language questions and receive product recommendations instantly.
-          </p>
+        {/* Solution Section: Recommendation */}
+        <CaseStudySection label="SOLUTION" title="Discovery Questions">
+          <div className="mb-12">
+            <p className="body-text mb-6">
+              I explored asking detailed, open-ended questions, but testing showed this slowed down the interaction significantly. My final solution uses simple, guided prompts that help reps capture key business insights quickly without disrupting the natural flow of eye contact and conversation.
+            </p>
+            <div className="bg-gray-100 rounded-lg flex items-center justify-center text-gray-400 border border-dashed border-gray-300 overflow-hidden shadow-sm">
+              <video src={businessVideo} autoPlay loop muted playsInline className="w-full h-auto" />
+            </div>
+          </div>
+        </CaseStudySection>
 
+        {/* Solution Section: Recommendation */}
+        <CaseStudySection label="SOLUTION" title="Recommendation">
+          <div className="mb-12">
+            <p className="body-text mb-6">
+              I experimented with showing the recommended products by AI, but found that reps want to show more options as that would be more practical . The final design presents a 'Smart Suggestion' that includes transparent reasoning and relevant add-ons and other products, giving reps the confidence to explain why this solution is the perfect fit and customer with multiple choice.
+            </p>
+            <div className="bg-gray-100 rounded-lg flex items-center justify-center text-gray-400 border border-dashed border-gray-300 overflow-hidden shadow-sm">
+              <video src={recommendationsVideo} autoPlay loop muted playsInline className="w-full h-auto" />
+            </div>
+          </div>
+        </CaseStudySection>
+
+        {/* Full Design Video Section */}
+        <div className="w-full bg-gray-50 py-16 md:py-24 mb-16">
+          <div className="container mx-auto px-6 md:px-12 lg:px-16">
+            <div className="bg-gray-200 rounded-lg shadow-sm flex items-center justify-center text-gray-400 border border-dashed border-gray-300 overflow-hidden">
+              <video src={fullPrototypeVideo} autoPlay loop muted playsInline className="w-full h-auto" />
+            </div>
+            <p className="text-center text-muted-foreground mt-6 text-sm md:text-base font-medium">Final Sales Assist Tool Design</p>
+          </div>
+        </div>
+
+        {/* Outcome Section */}
+        <CaseStudySection label="THE SOLUTION" title="Outcome">
           <div className="space-y-12">
             <div>
-              <h3 className="subsection-title">01. Search Experience</h3>
-              <p className="body-text mb-4">Optimized natural language search for rapid product lookup.</p>
-              <div className="py-32 bg-gray-50 flex justify-center items-center text-gray-400 italic rounded-lg border border-dashed border-gray-300">
-                [Final UI: Search Interface Placeholder]
-              </div>
+              <h3 className="subsection-title flex items-center gap-2">🤝 Trust Tools</h3>
+              <p className="body-text">
+                I collaborated with the engineering team to ensure the AI's logic was transparent. We introduced "Why this recommendation?" tooltips, which helped reps trust the suggestion rather than feeling like the tool was replacing their judgment.
+              </p>
             </div>
 
             <div>
-              <h3 className="subsection-title">02. Recommendation Engine</h3>
-              <p className="body-text mb-4">Smart bundles suggested based on customer usage profile.</p>
-              <div className="py-32 bg-gray-50 flex justify-center items-center text-gray-400 italic rounded-lg border border-dashed border-gray-300">
-                [Final UI: Recommendations Placeholder]
+              <h3 className="subsection-title flex items-center gap-2">💎 Scalable Design System</h3>
+              <p className="body-text mb-6">
+                I designed the project to scale as a reusable tablet framework for future Verizon SMB tools. I detailed development notes and handed off an organized Figma file to allow engineers to implement the recommendation card structure across other product lines without needing custom design work.
+              </p>
+              <div className="w-full h-auto rounded-md overflow-hidden shadow-sm border border-gray-100">
+                <img
+                  src={verizonDesignSystem}
+                  alt="Verizon Scalable Design System Components"
+                  className="w-full h-auto"
+                />
               </div>
             </div>
           </div>
         </CaseStudySection>
 
-        {/* Existing Design Process/Approach (renamed to avoid duplicate 'Approach' if needed, or kept as Process Overview) */}
-        {/* Keeping original 'Approach' as 'Process Overview' or similar if desired, but user asked for sections NOT in page. 
-            I will keep the existing 'Design Process' section below as it was, but maybe position it earlier or keep it as summary. 
-            For now, I will leave the original 'Approach' section as is, assuming it fits the narrative or user can ask to remove. 
-        */}
 
-        <CaseStudySection label="PROCESS" title="Process Overview">
-          <p className="body-text mb-6">
-            We started by mapping out the current sales flow and identifying friction points.
-          </p>
-        </CaseStudySection>
+        {/* Takeaways Section */}
+        <CaseStudySection title="Takeaways">
+          <div className="space-y-12">
+            <div>
+              <h3 className="subsection-title flex items-center gap-2">Develop Design Craft</h3>
+              <p className="body-text">
+                This project allowed me to practice adapting enterprise design systems for tablet contexts. I sought opportunities to experiment with AI interfaces, specifically how to present "uncertain" data (AI predictions) in a way that looks authoritative to a user. Through my collaborations with engineers, I learned how to design for latency creating "skeleton screens" that keep the user engaged while the AI processes data.
+              </p>
+            </div>
 
-        {/* Reflection Section */}
-        <CaseStudySection title="Reflection">
-          <p className="body-text mb-6">
-            This opportunity with Verizon allowed me to dive deep into enterprise UX and AI integration.
-            Designing for internal tools presents unique challenges in balancing efficiency with discoverability.
-          </p>
+            <div>
+              <h3 className="subsection-title flex items-center gap-2">Embrace the Adventure</h3>
+              <p className="body-text">
+                Working with Verizon, I thought I would just be designing UI screens, but I discovered opportunities to work on my soft skills such as stakeholder management and technical translation. I had to be proactive in leading conversations between the "tech talk" of engineers and the "sales talk" of the reps. The most rewarding experience was seeing a rep use the prototype without losing natural conversation with the customer.
+              </p>
+            </div>
+          </div>
         </CaseStudySection>
       </main>
+
+      {/* Project Navigation */}
+      <div className="container mx-auto px-6 md:px-12 lg:px-16 py-12 md:py-24">
+        <div className="flex justify-between items-center">
+          {/* Previous Project */}
+          <Link to="/hp" className="group text-left p-4 -ml-4 rounded-lg hover:bg-gray-50 transition-colors">
+            <span className="block text-xs font-bold text-gray-400 tracking-wider mb-2 uppercase">Prev</span>
+            <span className="text-xl md:text-2xl font-bold text-foreground group-hover:text-gray-600 transition-colors">
+              HP AI Companion
+            </span>
+          </Link>
+
+          {/* Next Project */}
+          <Link to="/hp" className="group text-right p-4 -mr-4 rounded-lg hover:bg-gray-50 transition-colors">
+            <span className="block text-xs font-bold text-gray-400 tracking-wider mb-2 uppercase">Next</span>
+            <span className="text-xl md:text-2xl font-bold text-foreground group-hover:text-gray-600 transition-colors">
+              HP AI Companion
+            </span>
+          </Link>
+        </div>
+      </div>
 
       <Footer />
     </div>
