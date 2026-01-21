@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import Footer from "@/components/Footer";
@@ -15,6 +15,21 @@ import "@/assets/original-home.css";
 const Home = () => {
     const [isHovered, setIsHovered] = useState(false);
 
+    const location = useLocation();
+
+    useEffect(() => {
+        if (location.state && location.state.scrollTo) {
+            const targetId = location.state.scrollTo;
+            const element = document.getElementById(targetId);
+            if (element) {
+                // Small timeout to ensure page load/layout is complete
+                setTimeout(() => {
+                    element.scrollIntoView({ behavior: "smooth" });
+                }, 100);
+            }
+        }
+    }, [location]);
+
     const scrollToWork = () => {
         document.querySelector("#work")?.scrollIntoView({ behavior: "smooth" });
     };
@@ -29,7 +44,9 @@ const Home = () => {
             <main>
                 {/* Hero Section */}
                 {/* Hero Section */}
-                <HeroSection />
+                <div id="about">
+                    <HeroSection />
+                </div>
 
                 {/* Featured Projects */}
                 <section id="work" className="featured-projects">

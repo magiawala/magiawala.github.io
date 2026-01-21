@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 
 interface HeaderProps {
   variant?: "home" | "default" | "standard";
@@ -45,6 +45,26 @@ const Header = ({ variant = "default" }: HeaderProps) => {
       ? "bg-zinc-950"
       : isScrolled ? "bg-zinc-950" : "bg-white";
 
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, targetId: string) => {
+    e.preventDefault();
+
+    // If we are already on home page
+    if (location.pathname === "/" || location.pathname === "") {
+      const element = document.getElementById(targetId);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    } else {
+      // Navigate to home and pass targetId in state
+      navigate("/", { state: { scrollTo: targetId } });
+    }
+
+    setIsMenuOpen(false);
+  };
+
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-[999] transition-all duration-300 ${isVisible ? "translate-y-0" : "-translate-y-full"} ${variant === "home"
@@ -60,14 +80,16 @@ const Header = ({ variant = "default" }: HeaderProps) => {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
             <a
-              href="/#about"
-              className={`text-sm font-medium transition-colors duration-200 ${textColorClass}`}
+              href="#about"
+              onClick={(e) => handleNavClick(e, "about")}
+              className={`text-sm font-medium transition-colors duration-200 cursor-pointer ${textColorClass}`}
             >
               About
             </a>
             <a
-              href="/#work"
-              className={`text-sm font-medium transition-colors duration-200 ${textColorClass}`}
+              href="#work"
+              onClick={(e) => handleNavClick(e, "work")}
+              className={`text-sm font-medium transition-colors duration-200 cursor-pointer ${textColorClass}`}
             >
               Work
             </a>
@@ -111,16 +133,16 @@ const Header = ({ variant = "default" }: HeaderProps) => {
       >
         <div className="flex flex-col items-center justify-center gap-8 pt-20">
           <a
-            href="/#about"
+            href="#about"
             className="text-2xl font-medium text-foreground"
-            onClick={() => setIsMenuOpen(false)}
+            onClick={(e) => handleNavClick(e, "about")}
           >
             About
           </a>
           <a
-            href="/#work"
+            href="#work"
             className="text-2xl font-medium text-foreground"
-            onClick={() => setIsMenuOpen(false)}
+            onClick={(e) => handleNavClick(e, "work")}
           >
             Work
           </a>
