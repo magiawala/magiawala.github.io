@@ -19,7 +19,7 @@ import fullPrototypeVideo from "@/assets/Full Prototype.webm";
 
 
 import verizonDesignSystem from "@/assets/verizon-design-system.png";
-import verizonBanner from "@/assets/Verizon banner.png";
+import HPBanner from "@/assets/HP banner.png";
 import LazyVideo from "@/components/LazyVideo";
 
 const HPCaseStudy = () => {
@@ -64,19 +64,70 @@ const HPCaseStudy = () => {
                     </div>
                 </section>
 
+                {/* Context Section */}
+                <div id="case-study-context">
+                    <CaseStudySection title="Context">
+                        <p className="body-text mb-6">
+                            The HP AI Companion utilizes a combination of Local AI (fast, private, offline) and Cloud AI. However, user often struggled to understand which AI they were using, leading to a "trust gap" where they hesitated to rely on the tool for critical task.
+                        </p>
+                        <p className="body-text mb-8">
+                            My project focused on redesigning the onboarding and home experience to bridge this gap. By defining clear onboarding questions and using visual storytelling, that would help users understand the tool before using it.
+                        </p>
+
+                        <h3 className="subsection-title">Stakeholders</h3>
+                        <p className="body-text">
+                            I had to continuously communicate with a cross-functional team of UX Researchers, Engineer, and Product Manager to align on technical constraints and user needs. I worked with AI experts to understand the specific benefits of Local AI (privacy, speed) and collaborated with engineering to translate those capabilities into user-facing product.            </p>
+                    </CaseStudySection>
+                </div>
 
 
-                {/*  --- CONTENT SECTIONS (Placeholders) --- */}
-                <CaseStudySection title="Problem Space">
-                    <p className="body-text mb-8">
-                        Users were unclear about when their data was being processed locally on their device versus sent to the cloud. This ambiguity created privacy concerns and reduced trust in the AI Companion features.
+                {/* Problem Section */}
+                <CaseStudySection title="Problem">
+                    <div className="mb-6">
+                        <h3 className="subsection-title">
+                            The Challenge:
+                        </h3>
+                        <p className="text-lg md:text-xl text-foreground font-medium mb-6">
+                            How might we build confidence in HP AI Companion by making its working clear?
+                        </p>
+                    </div>
+                    <p className="body-text">
+                        Students often freeze at the "blank slate" of an AI tool, unsure of what to ask or where their data is going. The goal was to eliminate this hesitation, making the tool approachable and clearly signaling the privacy benefits of Local processing.            The goal was to streamline this process, reducing time-to-quote and improving accuracy.
                     </p>
                 </CaseStudySection>
 
                 {/* Banner Image */}
                 <div className="w-full">
-                    <img src={verizonBanner} alt="Project Banner" className="w-full h-auto object-cover" />
+                    <img src={HPBanner} alt="Project Banner" className="w-full h-auto object-cover" />
                 </div>
+
+
+                {/* Impact Section */}
+                <CaseStudySection label="IMPACT" title="Key Results">
+                    <div className="flex flex-col gap-4">
+                        {/* Metric 1 */}
+                        <div className="p-6 bg-gray-50 rounded-xl">
+                            <p className="text-lg md:text-xl text-foreground">
+                                <span className="font-bold text-blue-600 mr-1">40%</span>
+                                improvement in time on task
+                            </p>
+                        </div>
+
+                        {/* Metric 2 */}
+                        <div className="p-6 bg-gray-50 rounded-xl">
+                            <p className="text-lg md:text-xl text-foreground">
+                                User retention <span className="font-bold text-blue-600 mx-1">increased by 10%</span>
+                            </p>
+                        </div>
+
+                        {/* Metric 3 */}
+                        <div className="p-6 bg-gray-50 rounded-xl">
+                            <p className="text-lg md:text-xl text-foreground">
+                                Net Promoter Score (NPS) of <span className="font-bold text-blue-600 mx-1">70</span> for the system
+                            </p>
+                        </div>
+                    </div>
+                </CaseStudySection>
 
 
                 <CaseStudySection title="Solution">
