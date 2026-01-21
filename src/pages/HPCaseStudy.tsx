@@ -12,8 +12,8 @@ import verizonGallery1 from "@/assets/verizon-gallery-1.jpg";
 import verizonGallery2 from "@/assets/verizon-gallery-2.jpg";
 import verizonGallery3 from "@/assets/verizon-gallery-3.png";
 
-import onboardingVideo from "@/assets/Onboarding.webm";
-import businessVideo from "@/assets/Understanding Business.webm";
+import onboardingVideo from "@/assets/HPOnboarding.webm";
+import businessVideo from "@/assets/HPNav.webm";
 import recommendationsVideo from "@/assets/Recommendations.webm";
 import fullPrototypeVideo from "@/assets/Full Prototype.webm";
 
@@ -184,7 +184,7 @@ const HPCaseStudy = () => {
                                 The previous version lacked an onboarding flow entirely, dropping students into the tool with no context. In the final design, I introduced a dedicated Welcome Experience that captures student interests to personalize the feed, explains the tool's core capabilities, and explicitly addresses data privacy to build trust in the Local AI features from day one.
                             </p>
                             <div className="bg-gray-100 rounded-lg flex items-center justify-center text-gray-400 border border-dashed border-gray-300 overflow-hidden shadow-sm">
-                                <LazyVideo src={businessVideo} autoPlay loop muted playsInline className="w-full h-auto" />
+                                <LazyVideo src={onboardingVideo} autoPlay loop muted playsInline className="w-full h-auto" />
                             </div>
                         </div>
 
@@ -197,23 +197,6 @@ const HPCaseStudy = () => {
                             <div className="bg-gray-100 rounded-lg flex items-center justify-center text-gray-400 border border-dashed border-gray-300 overflow-hidden shadow-sm">
                                 <LazyVideo src={businessVideo} autoPlay loop muted playsInline className="w-full h-auto" />
                             </div>
-                        </div>
-                    </div>
-                </CaseStudySection>
-
-                {/*  --- VIDEO PLACEHOLDERS (Reusing Verizon for layout structure, update sources later) --- */}
-                <CaseStudySection title="Final Design">
-                    <div className="space-y-24">
-                        <div className="space-y-4">
-                            <h3 className="text-2xl font-semibold mb-4">Onboarding Flow</h3>
-                            <p className="body-text mb-4">Guided experience explaining local vs cloud AI.</p>
-                            <LazyVideo src={onboardingVideo} poster={verizonThumb} />
-                        </div>
-
-                        <div className="space-y-4">
-                            <h3 className="text-2xl font-semibold mb-4">Home Navigation</h3>
-                            <p className="body-text mb-4">Clear mode switching and status indicators.</p>
-                            <LazyVideo src={fullPrototypeVideo} poster={verizonThumb} />
                         </div>
                     </div>
                 </CaseStudySection>
