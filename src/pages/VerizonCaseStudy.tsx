@@ -20,6 +20,7 @@ import fullPrototypeVideo from "@/assets/Full Prototype.webm";
 
 
 import verizonDesignSystem from "@/assets/verizon-design-system.png";
+import verizonBanner from "@/assets/Verizon banner.png";
 import LazyVideo from "@/components/LazyVideo";
 
 const VerizonCaseStudy = () => {
@@ -133,6 +134,15 @@ const VerizonCaseStudy = () => {
             The goal was to streamline this process, reducing time-to-quote and improving accuracy.
           </p>
         </CaseStudySection>
+
+        {/* Banner Image */}
+        <div className="w-full mb-16 md:mb-24 mt-8">
+          <div className="container mx-auto px-6 md:px-12 lg:px-16">
+            <div className="rounded-lg overflow-hidden shadow-sm">
+              <img src={verizonBanner} alt="Verizon Business Workflow" className="w-full h-auto" />
+            </div>
+          </div>
+        </div>
 
         {/* Research Section */}
         <CaseStudySection label="DISCOVERY" title="Research">
