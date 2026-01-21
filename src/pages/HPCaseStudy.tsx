@@ -205,11 +205,32 @@ const HPCaseStudy = () => {
                 <CaseStudySection title="Outcome">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                         <div>
+                            <h3 className="subsection-title">Trust & Confidence</h3>
                             <p className="body-text mb-6">
-                                The new design resulted in a 25% increase in task completion rates for mode-switching tasks and significantly improved user comprehension of privacy features in usability testing.
+                                Beyond the metrics, the qualitative shift was significant. Students described the new Companion as "logical" and "approachable." By clearly signaling when the secure Local AI was active, we successfully turned a technical constraint into a privacy feature that students valued.
+                            </p>
+                        </div>
+                        <div>
+                            {/* Intentionally left empty for layout balance or future image */}
+                        </div>
+                    </div>
+                </CaseStudySection>
+
+                <CaseStudySection title="Takeaways">
+                    <div className="space-y-12">
+                        <div>
+                            <h3 className="subsection-title">Onboarding Drives Trust</h3>
+                            <p className="body-text">
+                                This project allowed me to see that transparency isn't just about legal text; it's about UX. I learned that explaining why Local AI is active during the onboarding flow replaced user guesswork with understanding.
                             </p>
                         </div>
 
+                        <div>
+                            <h3 className="subsection-title">Blank States are Risky</h3>
+                            <p className="body-text">
+                                Working on this redesign, I learned that "simplicity" doesn't mean "empty." I had to be proactive in moving away from the standard "empty chat box" pattern. The most rewarding lesson was seeing students use the suggested prompts to jump straight into their work, transforming a passive tool into an active collaborator.
+                            </p>
+                        </div>
                     </div>
                 </CaseStudySection>
 
