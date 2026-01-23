@@ -114,29 +114,6 @@ const VerizonCaseStudy = () => {
           </p>
         </CaseStudySection>
 
-
-
-
-
-        {/* Research Section */}
-        <CaseStudySection label="DISCOVERY" title="Research">
-          <p className="body-text mb-6">
-            My first step was to understand the constraints of the physical store environment. I researched existing system and shadowed reps during customer interactions. I conducted user interviews with business reps to learn how they currently found customer information and neeed. They revealed that they often relied on memory or "questionaire sheet" because there were no digital tools.
-          </p>
-
-          <div className="flex flex-col gap-6 mb-8">
-            <blockquote className="border-l-4 border-red-600 pl-6 py-2 italic text-muted-foreground bg-red-50/10 dark:bg-red-900/5 rounded-r-lg">
-              <p className="mb-2">"I am not always available at the store as I have 5 stores under me."</p>
-              <footer className="text-sm font-semibold text-foreground text-left not-italic">— Business Representative</footer>
-            </blockquote>
-
-            <blockquote className="border-l-4 border-red-600 pl-6 py-2 italic text-muted-foreground bg-red-50/10 dark:bg-red-900/5 rounded-r-lg">
-              <p className="mb-2">"I don't know about the business solution that verizon provides above the network. When interacting with customers, I'm afraid I'll quote the wrong thing so I just take their information and send it to online customer support."</p>
-              <footer className="text-sm font-semibold text-foreground text-left not-italic">— Sales Representative Manager</footer>
-            </blockquote>
-          </div>
-        </CaseStudySection>
-
         {/* Impact Section */}
         <CaseStudySection label="IMPACT" title="Key Results">
           <div className="flex flex-col gap-4">
@@ -161,6 +138,26 @@ const VerizonCaseStudy = () => {
                 Net Promoter Score (NPS) of <span className="font-bold text-foreground mx-1">72</span> for the system
               </p>
             </div>
+          </div>
+        </CaseStudySection>
+
+
+        {/* Research Section */}
+        <CaseStudySection label="DISCOVERY" title="Research">
+          <p className="body-text mb-6">
+            My first step was to understand the constraints of the physical store environment. I researched existing system and shadowed reps during customer interactions. I conducted user interviews with business reps to learn how they currently found customer information and neeed. They revealed that they often relied on memory or "questionaire sheet" because there were no digital tools.
+          </p>
+
+          <div className="flex flex-col gap-6 mb-8">
+            <blockquote className="border-l-4 border-red-600 pl-6 py-2 italic text-muted-foreground bg-red-50/10 dark:bg-red-900/5 rounded-r-lg">
+              <p className="mb-2">"I am not always available at the store as I have 5 stores under me."</p>
+              <footer className="text-sm font-semibold text-foreground text-left not-italic">— Business Representative</footer>
+            </blockquote>
+
+            <blockquote className="border-l-4 border-red-600 pl-6 py-2 italic text-muted-foreground bg-red-50/10 dark:bg-red-900/5 rounded-r-lg">
+              <p className="mb-2">"I don't know about the business solution that verizon provides above the network. When interacting with customers, I'm afraid I'll quote the wrong thing so I just take their information and send it to online customer support."</p>
+              <footer className="text-sm font-semibold text-foreground text-left not-italic">— Sales Representative Manager</footer>
+            </blockquote>
           </div>
         </CaseStudySection>
 
