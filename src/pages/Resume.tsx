@@ -10,14 +10,14 @@ const Resume = () => {
 
       <main className="pt-24 pb-20">
         <div className="container mx-auto px-6 md:px-12 lg:px-16">
-          <div className="flex flex-col md:flex-row md:items-center justify-between mb-12 gap-4">
+          <div className="relative mb-12 pl-6">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground text-left">
               Resume
             </h1>
             <a
               href={resumePdf}
               download="Devanshu_Magiawala_Resume.pdf"
-              className="px-6 py-4 bg-transparent border rounded-md font-medium hover:bg-[#731826] hover:text-white transition-all duration-300 text-[#731826] border-[#731826] leading-none inline-flex items-center gap-2"
+              className="absolute top-0 right-0 px-6 py-4 bg-transparent border rounded-md font-medium hover:bg-[#731826] hover:text-white transition-all duration-300 text-[#731826] border-[#731826] leading-none inline-flex items-center gap-2"
             >
               <Download className="w-4 h-4" />
               Download Resume
