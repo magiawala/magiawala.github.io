@@ -11,7 +11,7 @@ const Resume = () => {
       <main className="pt-24 pb-20">
         <div className="container mx-auto px-6 md:px-12 lg:px-16">
           <div className="flex flex-col md:flex-row md:items-center justify-between mb-12 gap-4">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground text-left">
               Resume
             </h1>
             <a
@@ -25,16 +25,16 @@ const Resume = () => {
           </div>
 
           {/* Summary Section */}
-          <section className="mb-16">
-            <h2 className="section-label mb-8">SUMMARY</h2>
-            <p className="body-text max-w-4xl">
+          <section className="mb-16 text-left">
+            <h2 className="section-label mb-8 text-left">SUMMARY</h2>
+            <p className="body-text max-w-4xl text-left">
               Product Designer with more than 3 years of expertise delivering seamless digital experiences by translating complex technical requirements into intuitive human-centered interfaces, seeking to drive measurable impact
             </p>
           </section>
 
           {/* Experience Section */}
-          <section className="mb-16">
-            <h2 className="section-label mb-8">EXPERIENCE</h2>
+          <section className="mb-16 text-left">
+            <h2 className="section-label mb-8 text-left">EXPERIENCE</h2>
 
             <div className="space-y-12">
               {/* Integrate BPD */}
@@ -138,8 +138,8 @@ const Resume = () => {
           </section>
 
           {/* Education Section */}
-          <section className="mb-16">
-            <h2 className="section-label mb-8">EDUCATION</h2>
+          <section className="mb-16 text-left">
+            <h2 className="section-label mb-8 text-left">EDUCATION</h2>
 
             <div className="space-y-8">
               <div className="border-b border-border pb-8">
@@ -177,8 +177,8 @@ const Resume = () => {
           </section>
 
           {/* Skills Section */}
-          <section>
-            <h2 className="section-label mb-8">SKILLS</h2>
+          <section className="text-left">
+            <h2 className="section-label mb-8 text-left">SKILLS</h2>
 
             <div className="space-y-4">
               <div>
