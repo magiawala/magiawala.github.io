@@ -32,7 +32,7 @@ const About = () => {
 
                         <div className="flex flex-col gap-4">
                             <h3 className="text-sm font-bold tracking-widest text-[#731826] uppercase">Connect</h3>
-                            <a href="mailto:magiaanshu@gmail.com" className="text-zinc-600 hover:text-black transition-colors font-medium">magiaanshu@gmail.com</a>
+                            <a href="mailto:devanshumag@gmail.com" className="text-zinc-600 hover:text-black transition-colors font-medium">devanshumag@gmail.com</a>
                             <div className="flex gap-6 mt-2">
                                 <a href="https://linkedin.com/in/magiawala" target="_blank" rel="noopener noreferrer" className="text-zinc-500 hover:text-[#0A66C2] transition-colors">LinkedIn ↗</a>
                                 <a href="https://github.com/magiawala" target="_blank" rel="noopener noreferrer" className="text-zinc-500 hover:text-black transition-colors">GitHub ↗</a>

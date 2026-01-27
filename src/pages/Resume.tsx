@@ -24,6 +24,7 @@ const Resume = () => {
             </a>
           </div>
 
+
           {/* Summary Section */}
           <section className="mb-16 text-left">
             <h2 className="section-label mb-8 text-left">SUMMARY</h2>
