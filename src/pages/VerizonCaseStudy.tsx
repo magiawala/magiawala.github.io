@@ -25,7 +25,7 @@ import verizonBanner from "@/assets/Verizon banner.png";
 import LazyVideo from "@/components/LazyVideo";
 
 const VerizonCaseStudy = () => {
-  usePageAnalytics("Verizon Case Study");
+  usePageAnalytics("Verizon Page");
 
   return (
     <div className="min-h-screen bg-background font-inter">

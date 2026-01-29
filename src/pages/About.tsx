@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { usePageAnalytics } from "@/hooks/usePageAnalytics";
 import experienceJourney from "@/assets/experience-journey.png";
 import profileImage from "@/assets/profile-2949.jpg";
 import beach1 from "@/assets/beach-1.jpg";
@@ -10,6 +11,8 @@ import beach5 from "@/assets/beach-5.jpg";
 import beach6 from "@/assets/beach-6.jpg";
 
 const About = () => {
+    usePageAnalytics("About Page");
+
     return (
         <div className="min-h-screen font-outfit relative">
             {/* Background Gradient matching Home */}

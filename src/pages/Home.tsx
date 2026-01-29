@@ -18,7 +18,7 @@ import genuinLogo from "@/assets/logos/logo3.png";
 import "@/assets/original-home.css";
 
 const Home = () => {
-    usePageAnalytics("Home"); // Track page analytics
+    usePageAnalytics("Home Page"); // Track page analytics
     const [isHovered, setIsHovered] = useState(false);
 
     const location = useLocation();

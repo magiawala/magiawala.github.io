@@ -25,7 +25,7 @@ import nuanceoIconEye from "@/assets/nuanceo-icon-eye.png";
 import nuanceoIconTime from "@/assets/nuanceo-icon-time.png";
 
 const NuanceoCaseStudy = () => {
-    usePageAnalytics("Nuanceo Case Study");
+    usePageAnalytics("Nuanceo Page");
 
     useEffect(() => {
         window.scrollTo(0, 0);

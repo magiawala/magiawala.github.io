@@ -23,7 +23,7 @@ import hpThinkAloud from "@/assets/hp-think-aloud.png";
 import LazyVideo from "@/components/LazyVideo";
 
 const HPCaseStudy = () => {
-    usePageAnalytics("HP Case Study");
+    usePageAnalytics("HP Page");
 
     return (
         <div className="min-h-screen bg-background font-inter">

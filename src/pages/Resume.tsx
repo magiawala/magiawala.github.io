@@ -2,8 +2,11 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import resumePdf from "@/assets/Devanshu_Resume.pdf";
 import { Download } from "lucide-react";
+import { usePageAnalytics } from "@/hooks/usePageAnalytics";
 
 const Resume = () => {
+  usePageAnalytics("Resume Page");
+
   return (
     <div className="min-h-screen bg-background">
       <Header variant="standard" />
