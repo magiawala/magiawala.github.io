@@ -4,6 +4,7 @@ import CaseStudyHero from "@/components/CaseStudyHero";
 import CaseStudySection from "@/components/CaseStudySection";
 import { Link } from "react-router-dom";
 import CaseStudyImage from "@/components/CaseStudyImage";
+import { usePageAnalytics } from "@/hooks/usePageAnalytics";
 
 import researchImage from "@/assets/research-process.jpg";
 import verizonGallery1 from "@/assets/verizon-gallery-1.jpg";
@@ -22,6 +23,8 @@ import hpThinkAloud from "@/assets/hp-think-aloud.png";
 import LazyVideo from "@/components/LazyVideo";
 
 const HPCaseStudy = () => {
+    usePageAnalytics("HP Case Study");
+
     return (
         <div className="min-h-screen bg-background font-inter">
             <Header variant="default" />

@@ -4,6 +4,7 @@ import CaseStudyHero from "@/components/CaseStudyHero";
 import CaseStudySection from "@/components/CaseStudySection";
 import { Link } from "react-router-dom";
 import CaseStudyImage from "@/components/CaseStudyImage";
+import { usePageAnalytics } from "@/hooks/usePageAnalytics";
 
 import verizonThumb from "@/assets/verizon-thumb.png";
 import heroVerizon from "@/assets/hero-verizon.jpg";
@@ -24,6 +25,8 @@ import verizonBanner from "@/assets/Verizon banner.png";
 import LazyVideo from "@/components/LazyVideo";
 
 const VerizonCaseStudy = () => {
+  usePageAnalytics("Verizon Case Study");
+
   return (
     <div className="min-h-screen bg-background font-inter">
       <Header variant="default" />

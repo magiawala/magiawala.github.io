@@ -9,7 +9,13 @@
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
 
-    gtag('config', 'G-VQCBZGQD6G');
+    gtag('config', 'G-VQCBZGQD6G', {
+      send_page_view: false, // We'll handle page views manually for SPA
+      custom_map: {
+        'dimension1': 'page_name',
+        'metric1': 'engagement_time_seconds'
+      }
+    });
   </script>
 
   <meta charset="UTF-8" />

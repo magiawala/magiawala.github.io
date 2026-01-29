@@ -3,6 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import Footer from "@/components/Footer";
+import { usePageAnalytics } from "@/hooks/usePageAnalytics";
 import verizonThumb from "@/assets/verizon-thumb.png";
 import hpThumb from "@/assets/hp-thumb.png";
 import nuanceoThumb from "@/assets/nuanceo-card.jpg";
@@ -17,6 +18,7 @@ import genuinLogo from "@/assets/logos/logo3.png";
 import "@/assets/original-home.css";
 
 const Home = () => {
+    usePageAnalytics("Home"); // Track page analytics
     const [isHovered, setIsHovered] = useState(false);
 
     const location = useLocation();

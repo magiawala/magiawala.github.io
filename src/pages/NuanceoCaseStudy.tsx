@@ -5,6 +5,7 @@ import CaseStudyHero from "@/components/CaseStudyHero";
 import CaseStudySection from "@/components/CaseStudySection";
 import CaseStudyImage from "@/components/CaseStudyImage";
 import { Link } from "react-router-dom";
+import { usePageAnalytics } from "@/hooks/usePageAnalytics";
 
 // Images
 import nuanceoHeroVenice from "@/assets/nuanceo-hero-venice.jpg";
@@ -24,6 +25,8 @@ import nuanceoIconEye from "@/assets/nuanceo-icon-eye.png";
 import nuanceoIconTime from "@/assets/nuanceo-icon-time.png";
 
 const NuanceoCaseStudy = () => {
+    usePageAnalytics("Nuanceo Case Study");
+
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
