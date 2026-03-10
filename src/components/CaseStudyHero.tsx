@@ -48,7 +48,7 @@ const CaseStudyHero = ({
 
       {/* Absolute Right Image (Outside Container Bounds) */}
       {rightImage && (
-        <div className="absolute bottom-0 right-0 z-[5] w-[85%] sm:w-[75%] md:w-[60%] lg:w-[55%] xl:w-[50%] flex justify-end">
+        <div className="absolute bottom-0 -right-[15%] md:-right-[20%] lg:-right-[15%] xl:-right-[10%] z-[5] w-[100%] sm:w-[90%] md:w-[80%] lg:w-[75%] xl:w-[70%] flex justify-end">
           <img
             src={rightImage}
             alt={`${title} mockup`}
