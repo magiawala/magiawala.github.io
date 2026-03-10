@@ -4,6 +4,7 @@ import CaseStudyHero from "@/components/CaseStudyHero";
 import CaseStudySection from "@/components/CaseStudySection";
 import { Link } from "react-router-dom";
 import { usePageAnalytics } from "@/hooks/usePageAnalytics";
+import integrateHero from "@/assets/image_mockup.png";
 
 const IntegrateCaseStudy = () => {
     usePageAnalytics("Integrate Page");
@@ -18,10 +19,11 @@ const IntegrateCaseStudy = () => {
                     title="Integrate: Scaling a Self-Therapy Vision from Zero to One"
                     subtitle="Architected the core user experience—transitioning the platform from a text-heavy, legacy-driven tool to a modern, video-first wellness journey."
                     role="Founding Product Designer"
-                    timeline="Winter 2026 (8-week Rapid Sprint)"
+                    timeline="8-week Sprint"
                     tools="Figma, Design Systems, Rapid Prototyping"
                     team="1 PM, 1 Backend Engineer, 1 Frontend Engineer"
                     accentColor="from-[#001C3E]/90 to-[#001C3E]/80"
+                    rightImage={integrateHero}
                 />
 
                 {/* Project Overview / Intro Section */}

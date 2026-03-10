@@ -10,6 +10,8 @@ interface CaseStudyHeroProps {
   imageClassName?: string;
   backgroundColor?: string;
   imageFit?: "cover" | "contain" | "fill";
+  rightImage?: string;
+  rightImageClassName?: string;
 }
 
 const CaseStudyHero = ({
@@ -24,6 +26,8 @@ const CaseStudyHero = ({
   imageClassName = "",
   backgroundColor,
   imageFit = "cover",
+  rightImage,
+  rightImageClassName = "",
 }: CaseStudyHeroProps) => {
   return (
     <section
@@ -41,6 +45,17 @@ const CaseStudyHero = ({
         )}
         <div className={`absolute inset-0 bg-gradient-to-br ${accentColor}`} />
       </div>
+
+      {/* Absolute Right Image Safely Anchored to Bottom Right */}
+      {rightImage && (
+        <div className="absolute bottom-0 right-0 z-[5] w-[95vw] md:w-[70vw] lg:w-[60vw] xl:w-[50vw] h-[90vh] flex items-end justify-end pointer-events-none">
+          <img
+            src={rightImage}
+            alt={`${title} mockup`}
+            className={`max-w-full max-h-full object-contain object-right-bottom drop-shadow-2xl translate-x-[2%] translate-y-[2%] ${rightImageClassName}`}
+          />
+        </div>
+      )}
 
       {/* Content */}
       <div className="relative z-10 w-full pb-12 md:pb-20">
@@ -78,15 +93,17 @@ const CaseStudyHero = ({
               </div>
             </div>
 
-            {/* Right - Title (Removed per request) */}
-            <div className="md:col-span-8 lg:col-span-9 hidden">
-              <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-primary-foreground mb-4 leading-tight">
-                {title}
-              </h1>
-              <p className="text-lg md:text-xl text-primary-foreground/80 max-w-2xl">
-                {subtitle}
-              </p>
-            </div>
+            {/* Right - Title (Hidden if rightImage is present) */}
+            {!rightImage && (
+              <div className="md:col-span-8 lg:col-span-9 hidden">
+                <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-primary-foreground mb-4 leading-tight">
+                  {title}
+                </h1>
+                <p className="text-lg md:text-xl text-primary-foreground/80 max-w-2xl">
+                  {subtitle}
+                </p>
+              </div>
+            )}
           </div>
         </div>
       </div>
