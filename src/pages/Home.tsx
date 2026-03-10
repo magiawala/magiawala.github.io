@@ -57,7 +57,30 @@ const Home = () => {
 
                 {/* Featured Projects */}
                 <section id="work" className="featured-projects !pb-0">
-                    {/* Project 1: Verizon Business */}
+                    {/* Project 1: Integrate */}
+                    <article className="project-showcase-item">
+                        <div className="project-thumb bg-[#E4EEF2] flex items-center justify-center pt-8 px-8 overflow-hidden rounded-2xl w-full aspect-[4/3]">
+                            <img src={integrateThumb} alt="Integrate Project" className="object-cover w-full h-full rounded-t-lg shadow-xl translate-y-4" />
+                        </div>
+                        <div className="project-details">
+                            <span className="role-label" style={{ color: '#6976EB' }}>Founding Product Designer</span>
+                            <h2 className="project-title-large">
+                                Integrate: Scaling a Self-Therapy Vision from Zero to One
+                            </h2>
+                            <div className="project-tags">
+                                <span className="tag-pill" style={{ backgroundColor: '#EEF0FF', color: '#6976EB' }}>Design System</span>
+                                <span className="tag-pill" style={{ backgroundColor: '#EEF0FF', color: '#6976EB' }}>Healthcare</span>
+                            </div>
+                            <p className="project-desc-text">
+                                Architected the core user experience for a BPD & C-PTSD self-therapy startup, reducing user churn by 30% through guided video-first content and intuitive onboarding.
+                            </p>
+                            <Link to="/integrate" className="view-project-link" style={{ color: '#6976EB', borderColor: '#6976EB' }}>
+                                View Project →
+                            </Link>
+                        </div>
+                    </article>
+
+                    {/* Project 2: Verizon Business */}
                     <article className="project-showcase-item">
                         <div className="project-thumb">
                             <img src={verizonThumb} alt="Verizon Project" />
@@ -81,7 +104,7 @@ const Home = () => {
                         </div>
                     </article>
 
-                    {/* Project 2: HP Inc */}
+                    {/* Project 3: HP Inc */}
                     <article className="project-showcase-item">
                         <div className="project-thumb">
                             <img src={hpThumb} alt="HP Project" />
@@ -107,7 +130,7 @@ const Home = () => {
                         </div>
                     </article>
 
-                    {/* Project 3: Nuanceo */}
+                    {/* Project 4: Nuanceo */}
                     <article className="project-showcase-item !mb-240">
                         <div className="project-thumb">
                             <img src={nuanceoThumb} alt="Nuanceo Project" />
@@ -125,28 +148,6 @@ const Home = () => {
                                 Led user testing and redesign of an art critique platform, resulting in a 30% faster task completion and 4x increase in daily active users.
                             </p>
                             <Link to="/nuanceo" className="view-project-link">
-                                View Project →
-                            </Link>
-                        </div>
-                    </article>
-                    {/* Project 4: Integrate */}
-                    <article className="project-showcase-item">
-                        <div className="project-thumb bg-[#E4EEF2] flex items-center justify-center pt-8 px-8 overflow-hidden rounded-2xl w-full aspect-[4/3]">
-                            <img src={integrateThumb} alt="Integrate Project" className="object-cover w-full h-full rounded-t-lg shadow-xl translate-y-4" />
-                        </div>
-                        <div className="project-details">
-                            <span className="role-label">Founding Product Designer</span>
-                            <h2 className="project-title-large">
-                                Integrate: Scaling a Self-Therapy Vision from Zero to One
-                            </h2>
-                            <div className="project-tags">
-                                <span className="tag-pill" style={{ backgroundColor: '#D1FAE5', color: '#065F46' }}>UX/UI Design</span>
-                                <span className="tag-pill" style={{ backgroundColor: '#D1FAE5', color: '#065F46' }}>Healthcare</span>
-                            </div>
-                            <p className="project-desc-text">
-                                Architected the core user experience for a BPD & C-PTSD self-therapy startup, reducing user churn by 30% through guided video-first content and intuitive onboarding.
-                            </p>
-                            <Link to="/integrate" className="view-project-link">
                                 View Project →
                             </Link>
                         </div>
