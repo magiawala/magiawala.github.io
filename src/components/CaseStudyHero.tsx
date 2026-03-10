@@ -83,12 +83,12 @@ const CaseStudyHero = ({
             </div>
 
             {/* Right - Title (Removed per request) or Right Image */}
-            <div className={`md:col-span-8 lg:col-span-9 ${!rightImage ? "hidden" : "flex items-center justify-end h-full"}`}>
+            <div className={`md:col-span-8 lg:col-span-9 ${!rightImage ? "hidden" : "flex items-end justify-end h-full"}`}>
               {rightImage ? (
                 <img
                   src={rightImage}
                   alt={`${title} mockup`}
-                  className={`w-full max-w-4xl object-contain drop-shadow-2xl translate-y-8 ${rightImageClassName}`}
+                  className={`w-full max-w-4xl object-contain drop-shadow-2xl translate-y-12 md:translate-y-20 ${rightImageClassName}`}
                 />
               ) : (
                 <>
