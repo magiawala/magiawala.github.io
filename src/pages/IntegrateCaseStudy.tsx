@@ -5,7 +5,6 @@ import CaseStudySection from "@/components/CaseStudySection";
 import { Link } from "react-router-dom";
 import { usePageAnalytics } from "@/hooks/usePageAnalytics";
 import integrateHero from "@/assets/image_mockup.png";
-import onboardingSurveyImg from "@/assets/Onboarding Survey.png";
 import onboardingVideoImg from "@/assets/Onboarding Videoh.png";
 
 const IntegrateCaseStudy = () => {
@@ -175,20 +174,13 @@ const IntegrateCaseStudy = () => {
                                 <strong className="text-foreground">Human-Centric Design:</strong> I introduced a split-screen layout with a video guide at the start before the survey questions. This immediately provided a human face to the platform, making the questions feel like a welcoming conversation rather than a clinical audit.
                             </p>
 
-                            {/* Onboarding Images Grid */}
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 my-12 lg:-mx-16 xl:-mx-24">
-                                <div className="rounded-2xl overflow-hidden hover-lift shadow-[0_8px_30px_rgb(0,0,0,0.12)] bg-white h-auto md:h-full">
-                                    <img
-                                        src={onboardingSurveyImg}
-                                        alt="Onboarding Survey Interface"
-                                        className="w-full h-full object-cover"
-                                    />
-                                </div>
-                                <div className="rounded-2xl overflow-hidden hover-lift shadow-[0_8px_30px_rgb(0,0,0,0.12)] bg-white h-auto md:h-full">
+                            {/* Onboarding Video Image */}
+                            <div className="my-12 lg:-mx-16 xl:-mx-24">
+                                <div className="rounded-2xl overflow-hidden hover-lift shadow-[0_8px_30px_rgb(0,0,0,0.12)] bg-white w-full max-w-5xl mx-auto h-auto">
                                     <img
                                         src={onboardingVideoImg}
                                         alt="Onboarding Video Interface"
-                                        className="w-full h-full object-cover"
+                                        className="w-full h-auto object-cover"
                                     />
                                 </div>
                             </div>
