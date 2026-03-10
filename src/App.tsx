@@ -8,6 +8,7 @@ import About from "./pages/About";
 import VerizonCaseStudy from "./pages/VerizonCaseStudy";
 import HPCaseStudy from "./pages/HPCaseStudy";
 import NuanceoCaseStudy from "./pages/NuanceoCaseStudy";
+import IntegrateCaseStudy from "./pages/IntegrateCaseStudy";
 import Resume from "./pages/Resume";
 import NotFound from "./pages/NotFound";
 import ScrollToTop from "./components/ScrollToTop";
@@ -27,6 +28,7 @@ const App = () => (
           <Route path="/verizon" element={<VerizonCaseStudy />} />
           <Route path="/hp" element={<HPCaseStudy />} />
           <Route path="/nuanceo" element={<NuanceoCaseStudy />} />
+          <Route path="/integrate" element={<IntegrateCaseStudy />} />
           <Route path="/resume" element={<Resume />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
