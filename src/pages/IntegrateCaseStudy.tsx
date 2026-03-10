@@ -4,7 +4,7 @@ import CaseStudyHero from "@/components/CaseStudyHero";
 import CaseStudySection from "@/components/CaseStudySection";
 import { Link } from "react-router-dom";
 import { usePageAnalytics } from "@/hooks/usePageAnalytics";
-import integrateHero from "@/assets/integrate-thumb copy.JPG";
+import integrateHero from "@/assets/integrate-thumb copy.jpg";
 
 const IntegrateCaseStudy = () => {
     usePageAnalytics("Integrate Page");

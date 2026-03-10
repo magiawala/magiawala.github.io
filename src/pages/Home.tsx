@@ -9,7 +9,7 @@ import hpThumb from "@/assets/hp-thumb.png";
 import nuanceoThumb from "@/assets/nuanceo-card.jpg";
 import anomalyThumb from "@/assets/anomaly-thumb.png";
 import satelliteThumb from "@/assets/satellite-thumb.png";
-import integrateThumb from "@/assets/image.png";
+import integrateThumb from "@/assets/integrate-thumb.png";
 import musicThumb from "@/assets/music-thumb.png";
 import hpLogo from "@/assets/logos/logo2.png";
 import verizonLogo from "@/assets/logos/verizon_new.png";
@@ -63,13 +63,13 @@ const Home = () => {
                             <img src={integrateThumb} alt="Integrate Project" className="object-contain w-3/4 h-3/4" />
                         </div>
                         <div className="project-details">
-                            <span className="role-label" style={{ color: '#6976EB' }}>Founding Product Designer</span>
+                            <span className="role-label" style={{ color: '#6976EB' }}>Product Designer</span>
                             <h2 className="project-title-large">
-                                Integrate: Scaling a Self-Therapy Vision from Zero to One
+                                Scaling a Self-Therapy Vision from Zero to One
                             </h2>
                             <div className="project-tags">
-                                <span className="tag-pill" style={{ backgroundColor: '#EEF0FF', color: '#6976EB' }}>Design System</span>
-                                <span className="tag-pill" style={{ backgroundColor: '#EEF0FF', color: '#6976EB' }}>Healthcare</span>
+                                <span className="tag-pill" style={{ backgroundColor: '#6976EB', color: '#BFBFEC' }}>Design System</span>
+                                <span className="tag-pill" style={{ backgroundColor: '#6976EB', color: '#BFBFEC' }}>Healthcare</span>
                             </div>
                             <p className="project-desc-text">
                                 Architected the core user experience for a BPD & C-PTSD self-therapy startup, reducing user churn by 30% through guided video-first content and intuitive onboarding.
