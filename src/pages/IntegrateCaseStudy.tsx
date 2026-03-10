@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import { usePageAnalytics } from "@/hooks/usePageAnalytics";
 import integrateHero from "@/assets/image_mockup.png";
 import onboardingVideoImg from "@/assets/Onboarding Videoh.png";
+import moduleVideoImg from "@/assets/Module_video.png";
 
 const IntegrateCaseStudy = () => {
     usePageAnalytics("Integrate Page");
