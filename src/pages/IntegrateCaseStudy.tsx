@@ -5,6 +5,8 @@ import CaseStudySection from "@/components/CaseStudySection";
 import { Link } from "react-router-dom";
 import { usePageAnalytics } from "@/hooks/usePageAnalytics";
 import integrateHero from "@/assets/image_mockup.png";
+import onboardingSurveyImg from "@/assets/Onboarding Survey.png";
+import onboardingVideoImg from "@/assets/Onboarding Videoh.png";
 
 const IntegrateCaseStudy = () => {
     usePageAnalytics("Integrate Page");
@@ -21,7 +23,7 @@ const IntegrateCaseStudy = () => {
                     role="Founding Product Designer"
                     timeline="8-week Sprint"
                     tools="Figma, Design Systems, Rapid Prototyping"
-                    team="1 PM, 1 Backend Engineer, 1 Frontend Engineer"
+                    team="2 Designers, 2 PM, 2 Backend Engineer, 1 Frontend Engineer"
                     accentColor="from-[#001C3E]/90 to-[#001C3E]/80"
                     rightImage={integrateHero}
                 />
@@ -34,14 +36,14 @@ const IntegrateCaseStudy = () => {
                             <div className="md:col-span-4">
                                 <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Integrate</h2>
                                 <div className="text-muted-foreground space-y-1 text-lg">
-                                    <p>Founding Product Designer</p>
+                                    <p>Product Designer</p>
                                 </div>
                             </div>
 
                             {/* Right Column: Narrative */}
                             <div className="md:col-span-8">
                                 <p className="body-text mb-6">
-                                    As the Founding Designer, I was responsible for the end-to-end design ecosystem of Integrate. I architected the core user experience—transitioning the platform from a text-heavy, legacy-driven tool to a modern, video-first wellness journey—while building a custom Administrative CMS to replace a rigid, manual infrastructure.
+                                    As the Product Designer, I was responsible for the end-to-end design ecosystem of Integrate. I architected the core user experience transitioning the platform from a text heavy, legacy driven tool to a modern, video first wellness journey, while building a custom Administrative CMS to replace a rigid, manual infrastructure.
                                 </p>
                             </div>
                         </div>
@@ -63,7 +65,7 @@ const IntegrateCaseStudy = () => {
                 {/* Problem Section */}
                 <CaseStudySection title="Problem">
                     <p className="body-text mb-8">
-                        The original platform utilized a rigid, template-based framework that prioritized technical data collection over the user’s emotional state.
+                        The original platform utilized a template based framework that prioritized technical data collection over the user’s emotional state.
                     </p>
                     <div className="space-y-8">
                         <div>
@@ -94,7 +96,7 @@ const IntegrateCaseStudy = () => {
                         <div className="p-6 bg-gray-50 rounded-xl">
                             <p className="text-lg md:text-xl text-foreground">
                                 <span className="font-bold text-blue-600 block mb-2 text-3xl">45%</span>
-                                Increase in onboarding completion by streamlining the multi-page intake into a guided, supportive flow.
+                                Increase in onboarding completion by streamlining a guided flow.
                             </p>
                         </div>
 
@@ -102,7 +104,7 @@ const IntegrateCaseStudy = () => {
                         <div className="p-6 bg-gray-50 rounded-xl">
                             <p className="text-lg md:text-xl text-foreground">
                                 <span className="font-bold text-blue-600 block mb-2 text-3xl">30%</span>
-                                Reduction in user churn by transitioning from text-dense modules to a video-led "Course Notation" experience.
+                                Reduction in user churn by transitioning from text-dense modules to a video-led experience.
                             </p>
                         </div>
 
@@ -110,24 +112,24 @@ const IntegrateCaseStudy = () => {
                         <div className="p-6 bg-gray-50 rounded-xl">
                             <p className="text-lg md:text-xl text-foreground">
                                 <span className="font-bold text-blue-600 block mb-2 text-3xl">70%</span>
-                                Faster content deployment for the PM team through the implementation of an intuitive, custom CMS.
+                                Faster content deployment for the Founder through an intuitive, custom CMS.
                             </p>
                         </div>
 
-                        {/* Metric 4 */}
+                        {/* Metric 4
                         <div className="p-6 bg-gray-50 rounded-xl">
                             <p className="text-lg md:text-xl text-foreground">
                                 <span className="font-bold text-blue-600 block mb-2 text-2xl">Aesthetic Professionalization</span>
                                 Shifted the user experience from a functional "medical utility" to a personalized, calming wellness journey.
                             </p>
-                        </div>
+                        </div> */}
                     </div>
                 </CaseStudySection>
 
                 {/* Research Section */}
                 <CaseStudySection label="DISCOVERY" title="Research">
                     <p className="body-text mb-8">
-                        I performed a Heuristic Evaluation and UX Audit to identify the friction points in the existing infrastructure.
+                        I conducted in-depth interviews with both patients and clinicians to identify critical friction points in the flow and pinpoint gaps in the therapeutic experience.
                     </p>
 
                     <div className="space-y-8 mb-12">
@@ -165,13 +167,31 @@ const IntegrateCaseStudy = () => {
                 <CaseStudySection title="Solution">
                     <div className="space-y-16">
                         <div>
-                            <h3 className="subsection-title mb-4">1. The Guided Onboarding (Iteration 4)</h3>
+                            <h3 className="subsection-title mb-4">1. The Guided Onboarding</h3>
                             <p className="body-text mb-4">
-                                I replaced the 6-page survey with a tiered, empathetic experience.
+                                I replaced the 6-page survey for pre-BPD diagnosis into a structured break down reducing its task time.
                             </p>
-                            <p className="body-text">
-                                <strong className="text-foreground">Human-Centric Design:</strong> I introduced a split-screen layout with a video guide. This immediately provided a "human face" to the app, making the 10 questions feel like a welcoming conversation rather than a clinical audit.
+                            <p className="body-text mb-8">
+                                <strong className="text-foreground">Human-Centric Design:</strong> I introduced a split-screen layout with a video guide at the start before the survey questions. This immediately provided a human face to the platform, making the questions feel like a welcoming conversation rather than a clinical audit.
                             </p>
+
+                            {/* Onboarding Images Grid */}
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 my-8">
+                                <div className="rounded-2xl overflow-hidden hover-lift shadow-lg bg-gray-50 flex items-center justify-center p-4">
+                                    <img
+                                        src={onboardingSurveyImg}
+                                        alt="Onboarding Survey Interface"
+                                        className="w-full h-auto rounded-xl"
+                                    />
+                                </div>
+                                <div className="rounded-2xl overflow-hidden hover-lift shadow-lg bg-gray-50 flex items-center justify-center p-4">
+                                    <img
+                                        src={onboardingVideoImg}
+                                        alt="Onboarding Video Interface"
+                                        className="w-full h-auto rounded-xl"
+                                    />
+                                </div>
+                            </div>
                         </div>
 
                         <div>
