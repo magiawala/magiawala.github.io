@@ -9,7 +9,7 @@ import hpThumb from "@/assets/hp-thumb.png";
 import nuanceoThumb from "@/assets/nuanceo-card.jpg";
 import anomalyThumb from "@/assets/anomaly-thumb.png";
 import satelliteThumb from "@/assets/satellite-thumb.png";
-import integrateThumb from "@/assets/IMAGE.PNG";
+import integrateThumb from "@/assets/image.png";
 import musicThumb from "@/assets/music-thumb.png";
 import hpLogo from "@/assets/logos/logo2.png";
 import verizonLogo from "@/assets/logos/verizon_new.png";
@@ -60,7 +60,7 @@ const Home = () => {
                     {/* Project 1: Integrate */}
                     <article className="project-showcase-item">
                         <div className="project-thumb flex items-center justify-center p-8 overflow-hidden rounded-2xl w-full aspect-[4/3]" style={{ backgroundColor: '#001C3E' }}>
-                            <img src={integrateThumb} alt="Integrate Project" className="object-contain w-full h-[85%]" />
+                            <img src={integrateThumb} alt="Integrate Project" className="object-contain w-auto h-auto max-w-[80%] max-h-[80%]" />
                         </div>
                         <div className="project-details">
                             <span className="role-label" style={{ color: '#6976EB' }}>Founding Product Designer</span>
