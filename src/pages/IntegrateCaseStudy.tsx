@@ -7,6 +7,7 @@ import { usePageAnalytics } from "@/hooks/usePageAnalytics";
 import integrateHero from "@/assets/image_mockup.png";
 import onboardingVideoImg from "@/assets/Onboarding Videoh.png";
 import moduleVideoImg from "@/assets/Module_video.png";
+import coursePageEditImg from "@/assets/Course_page_edit.png";
 
 const IntegrateCaseStudy = () => {
     usePageAnalytics("Integrate Page");
@@ -202,11 +203,32 @@ const IntegrateCaseStudy = () => {
                             </ul>
                         </div>
 
+                        <div className="my-12">
+                            <div className="rounded-2xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.12)] bg-white w-full h-auto">
+                                <img
+                                    src={moduleVideoImg}
+                                    alt="Onboarding Video Interface"
+                                    className="w-full h-auto object-contain"
+                                />
+                            </div>
+                        </div>
+
                         <div>
                             <h3 className="subsection-title mb-4">3. Custom "Visual" Admin CMS</h3>
                             <p className="body-text">
-                                I replaced the rigid legacy backend with a modular Content Builder. I designed this interface to mirror the user-facing app, allowing the PM to manage complex therapy logic through an intuitive, visual workflow instead of manual technical entries.
+                                The original admin backend required PMs to encode course data using unintuitive JSON structures. I worked closely with the backend engineer to design a custom, GUI-based CMS that drastically reduced the time it took to deploy a new therapeutic module.
                             </p>
+
+                            {/* Course Page Edit Image */}
+                            <div className="my-12">
+                                <div className="rounded-2xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.12)] bg-white w-full h-auto">
+                                    <img
+                                        src={coursePageEditImg}
+                                        alt="Course Page Edit CMS Interface"
+                                        className="w-full h-auto object-contain"
+                                    />
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </CaseStudySection>
@@ -254,7 +276,7 @@ const IntegrateCaseStudy = () => {
             </div>
 
             <Footer />
-        </div>
+        </div >
     );
 };
 
