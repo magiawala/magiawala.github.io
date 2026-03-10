@@ -23,7 +23,7 @@ const IntegrateCaseStudy = () => {
                     tools="Figma, Design Systems, Rapid Prototyping"
                     team="1 PM, 1 Backend Engineer, 1 Frontend Engineer"
                     accentColor="from-[#001C3E]/90 to-[#001C3E]/80"
-                    heroImage={integrateHero}
+                    rightImage={integrateHero}
                 />
 
                 {/* Project Overview / Intro Section */}

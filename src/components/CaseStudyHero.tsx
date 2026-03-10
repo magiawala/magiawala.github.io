@@ -10,6 +10,8 @@ interface CaseStudyHeroProps {
   imageClassName?: string;
   backgroundColor?: string;
   imageFit?: "cover" | "contain" | "fill";
+  rightImage?: string;
+  rightImageClassName?: string;
 }
 
 const CaseStudyHero = ({
@@ -24,6 +26,8 @@ const CaseStudyHero = ({
   imageClassName = "",
   backgroundColor,
   imageFit = "cover",
+  rightImage,
+  rightImageClassName = "",
 }: CaseStudyHeroProps) => {
   return (
     <section
@@ -78,14 +82,24 @@ const CaseStudyHero = ({
               </div>
             </div>
 
-            {/* Right - Title (Removed per request) */}
-            <div className="md:col-span-8 lg:col-span-9 hidden">
-              <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-primary-foreground mb-4 leading-tight">
-                {title}
-              </h1>
-              <p className="text-lg md:text-xl text-primary-foreground/80 max-w-2xl">
-                {subtitle}
-              </p>
+            {/* Right - Title (Removed per request) or Right Image */}
+            <div className={`md:col-span-8 lg:col-span-9 ${!rightImage ? "hidden" : "flex items-center justify-end h-full"}`}>
+              {rightImage ? (
+                <img
+                  src={rightImage}
+                  alt={`${title} mockup`}
+                  className={`w-full max-w-4xl object-contain drop-shadow-2xl translate-y-8 ${rightImageClassName}`}
+                />
+              ) : (
+                <>
+                  <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-primary-foreground mb-4 leading-tight">
+                    {title}
+                  </h1>
+                  <p className="text-lg md:text-xl text-primary-foreground/80 max-w-2xl">
+                    {subtitle}
+                  </p>
+                </>
+              )}
             </div>
           </div>
         </div>
