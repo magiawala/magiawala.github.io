@@ -63,18 +63,18 @@ const Home = () => {
                             <img src={integrateThumb} alt="Integrate Project" className="object-contain w-3/4 h-3/4" />
                         </div>
                         <div className="project-details">
-                            <span className="role-label" style={{ color: '#6976EB' }}>Product Designer</span>
+                            <span className="role-label">Product Designer</span>
                             <h2 className="project-title-large">
                                 Scaling a Self-Therapy Vision from Zero to One
                             </h2>
                             <div className="project-tags">
-                                <span className="tag-pill" style={{ backgroundColor: '#6976EB', color: '#BFBFEC' }}>Design System</span>
-                                <span className="tag-pill" style={{ backgroundColor: '#6976EB', color: '#BFBFEC' }}>Healthcare</span>
+                                <span className="tag-pill" style={{ backgroundColor: '#d9d9fcff', color: '#6976EB' }}>Design System</span>
+                                <span className="tag-pill" style={{ backgroundColor: '#d9d9fcff', color: '#6976EB' }}>Healthcare</span>
                             </div>
                             <p className="project-desc-text">
-                                Architected the core user experience for a BPD & C-PTSD self-therapy startup, reducing user churn by 30% through guided video-first content and intuitive onboarding.
+                                Designed the core user experience for a BPD & C-PTSD self-therapy startup, reducing user churn by 30% through guided video-first content and intuitive onboarding.
                             </p>
-                            <Link to="/integrate" className="view-project-link" style={{ color: '#6976EB', borderColor: '#6976EB' }}>
+                            <Link to="/integrate" className="view-project-link">
                                 View Project →
                             </Link>
                         </div>
@@ -88,7 +88,7 @@ const Home = () => {
                         <div className="project-details">
                             <span className="role-label">Verizon Business Product Designer</span>
                             <h2 className="project-title-large">
-                                Defined product flows and testing for Verizon small business sales teams
+                                Defined product flows and testing for SMB teams
                             </h2>
                             <div className="project-tags">
                                 <span className="tag-pill tag-verizon">Product Design</span>
@@ -96,7 +96,7 @@ const Home = () => {
                             </div>
                             <p className="project-desc-text">
                                 Designed an AI sales assist tool for Verizon Business, shaping early
-                                product concepts and helping SMB sales teams close deals faster.
+                                product concepts and helping SMB teams close deals faster.
                             </p>
                             <Link to="/verizon" className="view-project-link">
                                 View Project →
@@ -112,7 +112,7 @@ const Home = () => {
                         <div className="project-details">
                             <span className="role-label">HP Inc. Product Designer</span>
                             <h2 className="project-title-large">
-                                Revamped onboarding and home navigation for HP AI Companion
+                                Revamped onboarding and navigation for AI Companion
                             </h2>
                             <div className="project-tags">
 

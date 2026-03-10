@@ -155,7 +155,7 @@ const IntegrateCaseStudy = () => {
                     </div>
 
                     <div className="bg-blue-50/50 p-8 md:p-12 rounded-2xl border border-blue-100">
-                        <blockquote className="text-xl md:text-2xl text-blue-900 italic font-medium leading-relaxed mb-6">
+                        <blockquote className="text-l md:text-l text-blue-900 italic font-medium leading-relaxed mb-6">
                             "The videos are life-changing, but the website feels like an insurance portal. It’s dense and makes me feel a bit overwhelmed just trying to find where I left off."
                         </blockquote>
                         <div className="text-blue-800 font-semibold tracking-wide uppercase text-sm">
@@ -246,7 +246,7 @@ const IntegrateCaseStudy = () => {
                         <div>
                             <h3 className="subsection-title mb-4">Consistency as Care</h3>
                             <p className="body-text">
-                                By moving away from a rigid, template-based design to a cohesive, custom design system, I proved that visual clarity is a form of empathy. A predictable and clean interface allows users to focus their energy on healing rather than on the friction of navigation.
+                                By moving away from a rigid, template-based design to a cohesive, custom design system, I realised that visual clarity is a form of empathy. A predictable and clean interface allows users to focus their energy on healing rather than on the friction of navigation.
                             </p>
                         </div>
                     </div>
