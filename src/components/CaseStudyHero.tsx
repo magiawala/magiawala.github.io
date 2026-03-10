@@ -48,11 +48,11 @@ const CaseStudyHero = ({
 
       {/* Absolute Right Image (Outside Container Bounds) */}
       {rightImage && (
-        <div className="absolute bottom-0 -right-[15%] md:-right-[20%] lg:-right-[15%] xl:-right-[10%] z-[5] w-[100%] sm:w-[90%] md:w-[80%] lg:w-[75%] xl:w-[70%] flex justify-end">
+        <div className="absolute bottom-0 right-0 z-[5] w-[95%] sm:w-[85%] md:w-[70%] lg:w-[60%] xl:w-[55%] flex justify-end items-end pointer-events-none">
           <img
             src={rightImage}
             alt={`${title} mockup`}
-            className={`w-full h-auto object-contain drop-shadow-2xl translate-x-4 md:translate-x-12 translate-y-8 md:translate-y-16 ${rightImageClassName}`}
+            className={`w-full h-auto max-h-[95vh] object-contain object-right-bottom drop-shadow-2xl translate-x-[8%] translate-y-[8%] scale-[1.05] ${rightImageClassName}`}
           />
         </div>
       )}
