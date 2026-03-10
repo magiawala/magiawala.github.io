@@ -10,8 +10,6 @@ interface CaseStudyHeroProps {
   imageClassName?: string;
   backgroundColor?: string;
   imageFit?: "cover" | "contain" | "fill";
-  rightImage?: string;
-  rightImageClassName?: string;
 }
 
 const CaseStudyHero = ({
@@ -26,12 +24,10 @@ const CaseStudyHero = ({
   imageClassName = "",
   backgroundColor,
   imageFit = "cover",
-  rightImage,
-  rightImageClassName = "",
 }: CaseStudyHeroProps) => {
   return (
     <section
-      className="relative overflow-hidden w-full min-h-screen flex items-end pt-16"
+      className="w-full min-h-screen flex items-end pt-16"
       style={backgroundColor ? { backgroundColor } : undefined}
     >
       {/* Background Image with Gradient Overlay */}
@@ -45,17 +41,6 @@ const CaseStudyHero = ({
         )}
         <div className={`absolute inset-0 bg-gradient-to-br ${accentColor}`} />
       </div>
-
-      {/* Absolute Right Image (Outside Container Bounds) */}
-      {rightImage && (
-        <div className="absolute bottom-0 right-0 z-[5] w-[95vw] sm:w-[85vw] md:w-[70vw] lg:w-[60vw] xl:w-[55vw] max-w-[1400px] flex items-end justify-end pointer-events-none">
-          <img
-            src={rightImage}
-            alt={`${title} mockup`}
-            className={`w-full h-auto object-contain object-right-bottom drop-shadow-[0_20px_40px_rgba(0,0,0,0.5)] translate-x-8 md:translate-x-24 lg:translate-x-32 translate-y-8 md:translate-y-16 ${rightImageClassName}`}
-          />
-        </div>
-      )}
 
       {/* Content */}
       <div className="relative z-10 w-full pb-12 md:pb-20">
@@ -93,17 +78,15 @@ const CaseStudyHero = ({
               </div>
             </div>
 
-            {/* Right - Title (Hidden if rightImage exists, per request) */}
-            {!rightImage && (
-              <div className="md:col-span-8 lg:col-span-9">
-                <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-primary-foreground mb-4 leading-tight">
-                  {title}
-                </h1>
-                <p className="text-lg md:text-xl text-primary-foreground/80 max-w-2xl">
-                  {subtitle}
-                </p>
-              </div>
-            )}
+            {/* Right - Title (Removed per request) */}
+            <div className="md:col-span-8 lg:col-span-9 hidden">
+              <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-primary-foreground mb-4 leading-tight">
+                {title}
+              </h1>
+              <p className="text-lg md:text-xl text-primary-foreground/80 max-w-2xl">
+                {subtitle}
+              </p>
+            </div>
           </div>
         </div>
       </div>
