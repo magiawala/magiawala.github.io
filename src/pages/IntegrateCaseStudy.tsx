@@ -175,12 +175,12 @@ const IntegrateCaseStudy = () => {
                             </p>
 
                             {/* Onboarding Video Image */}
-                            <div className="my-12 lg:-mx-16 xl:-mx-24">
-                                <div className="rounded-2xl overflow-hidden hover-lift shadow-[0_8px_30px_rgb(0,0,0,0.12)] bg-white w-full max-w-5xl mx-auto h-auto">
+                            <div className="my-12">
+                                <div className="rounded-2xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.12)] bg-white w-full h-auto">
                                     <img
                                         src={onboardingVideoImg}
                                         alt="Onboarding Video Interface"
-                                        className="w-full h-auto object-cover"
+                                        className="w-full h-auto object-contain"
                                     />
                                 </div>
                             </div>
