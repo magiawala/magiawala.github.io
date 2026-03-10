@@ -31,7 +31,7 @@ const CaseStudyHero = ({
 }: CaseStudyHeroProps) => {
   return (
     <section
-      className="relative w-full min-h-screen flex items-end pt-16"
+      className="relative overflow-hidden w-full min-h-screen flex items-end pt-16"
       style={backgroundColor ? { backgroundColor } : undefined}
     >
       {/* Background Image with Gradient Overlay */}
@@ -48,11 +48,11 @@ const CaseStudyHero = ({
 
       {/* Absolute Right Image (Outside Container Bounds) */}
       {rightImage && (
-        <div className="absolute bottom-0 right-0 z-[5] max-w-[65vw] sm:max-w-[60vw] md:max-w-[55vw] lg:max-w-[50vw] xl:max-w-[45vw] flex items-end justify-end pointer-events-none">
+        <div className="absolute bottom-0 right-0 z-[5] w-[95vw] sm:w-[85vw] md:w-[70vw] lg:w-[60vw] xl:w-[55vw] max-w-[1400px] flex items-end justify-end pointer-events-none">
           <img
             src={rightImage}
             alt={`${title} mockup`}
-            className={`w-full max-h-[90vh] object-contain object-right-bottom drop-shadow-[0_20px_40px_rgba(0,0,0,0.5)] translate-x-[4%] translate-y-[2%] ${rightImageClassName}`}
+            className={`w-full h-auto object-contain object-right-bottom drop-shadow-[0_20px_40px_rgba(0,0,0,0.5)] translate-x-8 md:translate-x-24 lg:translate-x-32 translate-y-8 md:translate-y-16 ${rightImageClassName}`}
           />
         </div>
       )}
