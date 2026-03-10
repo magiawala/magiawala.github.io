@@ -59,8 +59,8 @@ const Home = () => {
                 <section id="work" className="featured-projects !pb-0">
                     {/* Project 1: Integrate */}
                     <article className="project-showcase-item">
-                        <div className="project-thumb flex items-center justify-center p-8 overflow-hidden rounded-2xl w-full aspect-[4/3]" style={{ backgroundColor: '#001C3E' }}>
-                            <img src={integrateThumb} alt="Integrate Project" className="object-contain w-auto h-auto max-w-[80%] max-h-[80%]" />
+                        <div className="project-thumb flex items-center justify-center overflow-hidden rounded-2xl w-full aspect-[4/3]" style={{ backgroundColor: '#001C3E' }}>
+                            <img src={integrateThumb} alt="Integrate Project" className="object-contain w-3/4 h-3/4" />
                         </div>
                         <div className="project-details">
                             <span className="role-label" style={{ color: '#6976EB' }}>Founding Product Designer</span>
