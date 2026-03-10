@@ -9,7 +9,7 @@ import hpThumb from "@/assets/hp-thumb.png";
 import nuanceoThumb from "@/assets/nuanceo-card.jpg";
 import anomalyThumb from "@/assets/anomaly-thumb.png";
 import satelliteThumb from "@/assets/satellite-thumb.png";
-import integrateThumb from "@/assets/integrate-thumb.jpg";
+import integrateThumb from "@/assets/integrate-thumb.png";
 import musicThumb from "@/assets/music-thumb.png";
 import hpLogo from "@/assets/logos/logo2.png";
 import verizonLogo from "@/assets/logos/verizon_new.png";
