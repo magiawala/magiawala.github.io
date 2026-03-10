@@ -176,19 +176,19 @@ const IntegrateCaseStudy = () => {
                             </p>
 
                             {/* Onboarding Images Grid */}
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 my-8">
-                                <div className="rounded-2xl overflow-hidden hover-lift shadow-lg bg-gray-50 flex items-center justify-center p-4">
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 my-12 lg:-mx-16 xl:-mx-24">
+                                <div className="rounded-2xl overflow-hidden hover-lift shadow-[0_8px_30px_rgb(0,0,0,0.12)] bg-white h-auto md:h-full">
                                     <img
                                         src={onboardingSurveyImg}
                                         alt="Onboarding Survey Interface"
-                                        className="w-full h-auto rounded-xl"
+                                        className="w-full h-full object-cover"
                                     />
                                 </div>
-                                <div className="rounded-2xl overflow-hidden hover-lift shadow-lg bg-gray-50 flex items-center justify-center p-4">
+                                <div className="rounded-2xl overflow-hidden hover-lift shadow-[0_8px_30px_rgb(0,0,0,0.12)] bg-white h-auto md:h-full">
                                     <img
                                         src={onboardingVideoImg}
                                         alt="Onboarding Video Interface"
-                                        className="w-full h-auto rounded-xl"
+                                        className="w-full h-full object-cover"
                                     />
                                 </div>
                             </div>
