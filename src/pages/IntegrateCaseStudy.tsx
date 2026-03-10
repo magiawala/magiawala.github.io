@@ -21,7 +21,7 @@ const IntegrateCaseStudy = () => {
                     timeline="Winter 2026 (8-week Rapid Sprint)"
                     tools="Figma, Design Systems, Rapid Prototyping"
                     team="1 PM, 1 Backend Engineer, 1 Frontend Engineer"
-                    accentColor="from-[#94B8DC]/90 to-[#94B8DC]/80"
+                    accentColor="from-[#001C3E]/90 to-[#001C3E]/80"
                 />
 
                 {/* Project Overview / Intro Section */}
