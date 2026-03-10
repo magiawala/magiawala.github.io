@@ -48,11 +48,11 @@ const CaseStudyHero = ({
 
       {/* Absolute Right Image Safely Anchored to Bottom Right */}
       {rightImage && (
-        <div className="absolute bottom-0 right-0 z-[5] w-[95vw] md:w-[70vw] lg:w-[60vw] xl:w-[50vw] h-[90vh] flex items-end justify-end pointer-events-none pr-8 pb-8 md:pr-16 md:pb-12 xl:pr-24 xl:pb-16">
+        <div className="absolute bottom-0 right-0 z-[5] w-[95vw] md:w-[70vw] lg:w-[60vw] xl:w-[50vw] h-[90vh] flex items-end justify-end pointer-events-none pr-8 pb-12 md:pr-16 md:pb-20 xl:pr-24 xl:pb-20">
           <img
             src={rightImage}
             alt={`${title} mockup`}
-            className={`max-w-full max-h-full object-contain object-right-bottom drop-shadow-2xl translate-x-[2%] translate-y-[2%] ${rightImageClassName}`}
+            className={`max-w-full max-h-full object-contain object-right-bottom drop-shadow-2xl translate-x-[2%] ${rightImageClassName}`}
           />
         </div>
       )}
