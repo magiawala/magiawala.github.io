@@ -261,7 +261,7 @@ const IntegrateCaseStudy = () => {
                 <CaseStudySection title="Takeaways">
                     <div className="space-y-12">
                         <div>
-                            <h3 className="subsection-title mb-4">The Founding Designer Mindset</h3>
+                            <h3 className="subsection-title mb-4"> Startup Designer Mindset</h3>
                             <p className="body-text">
                                 In a startup environment, design is a strategic lever. I learned that the interface is just as critical as the clinical content. If the experience isn't calming and professional, even the best therapeutic content will struggle to retain the people who need it most.
                             </p>
@@ -282,18 +282,18 @@ const IntegrateCaseStudy = () => {
             <div className="container mx-auto px-6 md:px-12 lg:px-16 py-12 md:py-24">
                 <div className="flex justify-between items-center">
                     {/* Previous Project */}
-                    <Link to="/verizon" className="group text-left p-4 -ml-4 rounded-lg hover:bg-gray-50 transition-colors">
+                    <Link to="/nuanceo" className="group text-left p-4 -ml-4 rounded-lg hover:bg-gray-50 transition-colors">
                         <span className="block text-xs font-bold text-gray-400 tracking-wider mb-2 uppercase">Prev</span>
                         <span className="text-xl md:text-2xl font-bold text-foreground group-hover:text-gray-600 transition-colors">
-                            Verizon Business
+                            Nuanceo
                         </span>
                     </Link>
 
                     {/* Next Project */}
-                    <Link to="/nuanceo" className="group text-right p-4 -mr-4 rounded-lg hover:bg-gray-50 transition-colors">
+                    <Link to="/verizon" className="group text-right p-4 -mr-4 rounded-lg hover:bg-gray-50 transition-colors">
                         <span className="block text-xs font-bold text-gray-400 tracking-wider mb-2 uppercase">Next</span>
                         <span className="text-xl md:text-2xl font-bold text-foreground group-hover:text-gray-600 transition-colors">
-                            Nuanceo
+                            Verizon Business
                         </span>
                     </Link>
                 </div>

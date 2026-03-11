@@ -283,7 +283,14 @@ const VerizonCaseStudy = () => {
 
       {/* Project Navigation */}
       <div className="container mx-auto px-6 md:px-12 lg:px-16 py-12 md:py-24">
-        <div className="flex justify-end items-center">
+        <div className="flex justify-between items-center">
+          {/* Previous Project */}
+          <Link to="/integrate" className="group text-left p-4 -ml-4 rounded-lg hover:bg-gray-50 transition-colors">
+            <span className="block text-xs font-bold text-gray-400 tracking-wider mb-2 uppercase">Prev</span>
+            <span className="text-xl md:text-2xl font-bold text-foreground group-hover:text-gray-600 transition-colors">
+              Integrate
+            </span>
+          </Link>
 
           {/* Next Project */}
           <Link to="/hp" className="group text-right p-4 -mr-4 rounded-lg hover:bg-gray-50 transition-colors">
