@@ -23,7 +23,7 @@ const IntegrateCaseStudy = () => {
                 <CaseStudyHero
                     title="Integrate: Scaling a Self-Therapy Vision from Zero to One"
                     subtitle="Architected the core user experience—transitioning the platform from a text-heavy, legacy-driven tool to a modern, video-first wellness journey."
-                    role="Founding Product Designer"
+                    role="Product Designer"
                     timeline="8-week Sprint"
                     tools="Figma, Design Systems, Rapid Prototyping"
                     team="2 Designers, 2 PM, 2 Backend Engineer, 1 Frontend Engineer"
