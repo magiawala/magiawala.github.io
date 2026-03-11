@@ -64,7 +64,7 @@ const IntegrateCaseStudy = () => {
                         </p>
 
                         {/* V1 Image (Previous Interface) */}
-                        <div className="my-12 lg:-mx-16 xl:-mx-24">
+                        <div className="my-12">
                             <div className="rounded-2xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.12)] bg-gray-50 flex items-center justify-center p-4">
                                 <img
                                     src={currentV1Img}
@@ -103,7 +103,7 @@ const IntegrateCaseStudy = () => {
                     </div>
 
                     {/* V2 Image (Current Interface) */}
-                    <div className="my-12 lg:-mx-16 xl:-mx-24">
+                    <div className="my-12">
                         <div className="rounded-2xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.12)] bg-gray-50 flex items-center justify-center p-4">
                             <img
                                 src={currentV2Img}
