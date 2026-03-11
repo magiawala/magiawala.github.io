@@ -62,6 +62,17 @@ const IntegrateCaseStudy = () => {
                         <p className="body-text">
                             My goal was to transform this functional foundation into a calming, high-retention consumer product.
                         </p>
+
+                        {/* V1 Image (Previous Interface) */}
+                        <div className="my-12 lg:-mx-16 xl:-mx-24">
+                            <div className="rounded-2xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.12)] bg-gray-50 flex items-center justify-center p-4">
+                                <img
+                                    src={currentV1Img}
+                                    alt="Integrate V1 Previous Interface"
+                                    className="w-full h-auto rounded-xl object-contain"
+                                />
+                            </div>
+                        </div>
                     </CaseStudySection>
                 </div>
 
@@ -91,15 +102,8 @@ const IntegrateCaseStudy = () => {
                         </div>
                     </div>
 
-                    {/* V1 and V2 Images Grid */}
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mt-12 mb-4 lg:-mx-16 xl:-mx-24">
-                        <div className="rounded-2xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.12)] bg-gray-50 flex items-center justify-center p-4">
-                            <img
-                                src={currentV1Img}
-                                alt="Integrate V1 Previous Interface"
-                                className="w-full h-auto rounded-xl object-contain"
-                            />
-                        </div>
+                    {/* V2 Image (Current Interface) */}
+                    <div className="my-12 lg:-mx-16 xl:-mx-24">
                         <div className="rounded-2xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.12)] bg-gray-50 flex items-center justify-center p-4">
                             <img
                                 src={currentV2Img}
