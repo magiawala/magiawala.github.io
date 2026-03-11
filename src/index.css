@@ -142,7 +142,7 @@
   }
 
   .subsection-title {
-    @apply text-base md:text-lg font-semibold text-foreground mb-3 flex items-center gap-2;
+    @apply text-xl md:text-2xl font-bold text-foreground mb-3 flex items-center gap-2;
   }
 
   .highlight-box {
