@@ -257,6 +257,42 @@ const IntegrateCaseStudy = () => {
                     </div>
                 </CaseStudySection>
 
+                {/* AI-Enhanced Velocity Section */}
+                <CaseStudySection title="AI-Enhanced Velocity">
+                    <p className="body-text mb-8">
+                        To meet a rapid 8-week production deadline, I integrated AI as a force multiplier across the design lifecycle—from initial patient research to final developer handoff.
+                    </p>
+
+                    <div className="space-y-12">
+                        <div>
+                            <h3 className="subsection-title mb-4">Research & Synthesis</h3>
+                            <ul className="space-y-2 body-text">
+                                <li><strong className="text-foreground">Task:</strong> Transcribing and categorizing 20+ hours of clinician and patient interviews.</li>
+                                <li><strong className="text-foreground">Tools:</strong> Otter.ai (Transcription) & GPT-4 (Sentiment Mapping).</li>
+                                <li><strong className="text-foreground">Outcome:</strong> Identified "onboarding fatigue" as the primary churn factor within 48 hours.</li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <h3 className="subsection-title mb-4">Ideation & Prototyping</h3>
+                            <ul className="space-y-2 body-text">
+                                <li><strong className="text-foreground">Task:</strong> Rapidly exploring "Course Notation" layouts and generating realistic therapeutic content.</li>
+                                <li><strong className="text-foreground">Tools:</strong> Claude / Lovable (Code-logic exploration) & Figma AI (Asset generation).</li>
+                                <li><strong className="text-foreground">Outcome:</strong> Moved from low-fidelity wireframes to a high-fidelity, interactive prototype in a single sprint.</li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <h3 className="subsection-title mb-4">Documentation & Handoff</h3>
+                            <ul className="space-y-2 body-text">
+                                <li><strong className="text-foreground">Task:</strong> Translating complex visual layouts into logic-based specs for the Admin CMS.</li>
+                                <li><strong className="text-foreground">Tools:</strong> GPT-4 (Technical Documentation) & Figma Dev Mode (Handoff).</li>
+                                <li><strong className="text-foreground">Outcome:</strong> Reduced "logic-gap" questions from backend engineers by 50% during the build.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </CaseStudySection>
+
                 {/* Takeaways Section */}
                 <CaseStudySection title="Takeaways">
                     <div className="space-y-12">
