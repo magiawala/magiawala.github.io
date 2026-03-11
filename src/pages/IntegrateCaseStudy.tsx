@@ -120,7 +120,7 @@ const IntegrateCaseStudy = () => {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         {/* Metric 1 */}
                         <div className="p-6 bg-gray-50 rounded-xl">
-                            <p className="text-lg md:text-xl text-foreground">
+                            <p className="body-text">
                                 <span className="font-bold text-blue-600 block mb-2 text-3xl">45%</span>
                                 Increase in onboarding completion by streamlining a guided flow.
                             </p>
@@ -128,7 +128,7 @@ const IntegrateCaseStudy = () => {
 
                         {/* Metric 2 */}
                         <div className="p-6 bg-gray-50 rounded-xl">
-                            <p className="text-lg md:text-xl text-foreground">
+                            <p className="body-text">
                                 <span className="font-bold text-blue-600 block mb-2 text-3xl">30%</span>
                                 Reduction in user churn by transitioning from text-dense modules to a video-led experience.
                             </p>
@@ -136,7 +136,7 @@ const IntegrateCaseStudy = () => {
 
                         {/* Metric 3 */}
                         <div className="p-6 bg-gray-50 rounded-xl">
-                            <p className="text-lg md:text-xl text-foreground">
+                            <p className="body-text">
                                 <span className="font-bold text-blue-600 block mb-2 text-3xl">70%</span>
                                 Faster content deployment for the Founder through an intuitive, custom CMS.
                             </p>
