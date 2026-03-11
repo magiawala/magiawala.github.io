@@ -8,6 +8,8 @@ import integrateHero from "@/assets/image_mockup.png";
 import onboardingVideoImg from "@/assets/Onboarding Videoh.png";
 import moduleVideoImg from "@/assets/Module_video.png";
 import coursePageEditImg from "@/assets/Course_page_edit.png";
+import currentV1Img from "@/assets/Current v1.png";
+import currentV2Img from "@/assets/Current v2.png";
 
 const IntegrateCaseStudy = () => {
     usePageAnalytics("Integrate Page");
@@ -84,8 +86,26 @@ const IntegrateCaseStudy = () => {
                         <div>
                             <h4 className="font-bold text-foreground text-xl mb-2">Operational Limitations</h4>
                             <p className="body-text">
-                                The Admin portal utilized a legacy backend that was difficult to navigate. This forced the PM to manually organize content, making it nearly impossible to update therapy paths or iterate on the product efficiently.
+                                The Admin portal utilized a legacy backend that was difficult to navigate. This forced the Founder to manually organize content, making it nearly impossible to update therapy paths or iterate on the product efficiently.
                             </p>
+                        </div>
+                    </div>
+
+                    {/* V1 and V2 Images Grid */}
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mt-12 mb-4 lg:-mx-16 xl:-mx-24">
+                        <div className="rounded-2xl overflow-hidden hover-lift shadow-[0_8px_30px_rgb(0,0,0,0.12)] bg-gray-50 flex items-center justify-center p-4">
+                            <img
+                                src={currentV1Img}
+                                alt="Integrate V1 Previous Interface"
+                                className="w-full h-auto rounded-xl object-contain"
+                            />
+                        </div>
+                        <div className="rounded-2xl overflow-hidden hover-lift shadow-[0_8px_30px_rgb(0,0,0,0.12)] bg-gray-50 flex items-center justify-center p-4">
+                            <img
+                                src={currentV2Img}
+                                alt="Integrate V2 Current Interface"
+                                className="w-full h-auto rounded-xl object-contain"
+                            />
                         </div>
                     </div>
                 </CaseStudySection>
