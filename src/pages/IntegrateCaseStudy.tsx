@@ -46,7 +46,7 @@ const IntegrateCaseStudy = () => {
                             {/* Right Column: Narrative */}
                             <div className="md:col-span-8">
                                 <p className="body-text mb-6">
-                                    As the Product Designer, I was responsible for the end-to-end design ecosystem of Integrate. I architected the core user experience transitioning the platform from a text heavy, legacy driven tool to a modern, video first wellness journey, while building a custom Administrative CMS to replace a rigid, manual infrastructure.
+                                    At Integrate, I focused on evolving the platform from a text-heavy system into a modern, video-first experience from design to production. This involved redesigning the core user journey and developing a custom Admin CMS to help the team manage content more efficiently.
                                 </p>
                             </div>
                         </div>
