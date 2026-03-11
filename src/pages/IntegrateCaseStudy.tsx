@@ -269,7 +269,7 @@ const IntegrateCaseStudy = () => {
                         <div className="w-full h-auto">
                             <img
                                 src={processImg}
-                                alt="AI Design Process Workflow"
+                                alt="AI Intelligence Workflow"
                                 className="w-full h-auto object-contain"
                             />
                         </div>
