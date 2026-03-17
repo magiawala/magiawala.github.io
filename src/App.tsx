@@ -13,6 +13,14 @@ import Resume from "./pages/Resume";
 import NotFound from "./pages/NotFound";
 import ScrollToTop from "./components/ScrollToTop";
 
+import NextProjectPresentation from "./pages/NuanceoPresentation";
+
+// ... Keep existing imports but add these below them inline ...
+import IntegratePresentation from "./pages/IntegratePresentation";
+import VerizonPresentation from "./pages/VerizonPresentation";
+import HPPresentation from "./pages/HPPresentation";
+import NuanceoPresentation from "./pages/NuanceoPresentation";
+
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -30,6 +38,13 @@ const App = () => (
           <Route path="/nuanceo" element={<NuanceoCaseStudy />} />
           <Route path="/integrate" element={<IntegrateCaseStudy />} />
           <Route path="/resume" element={<Resume />} />
+          
+          {/* Presentation Sub-routes */}
+          <Route path="/integrate-presentation" element={<IntegratePresentation />} />
+          <Route path="/verizon-presentation" element={<VerizonPresentation />} />
+          <Route path="/hp-presentation" element={<HPPresentation />} />
+          <Route path="/nuanceo-presentation" element={<NuanceoPresentation />} />
+
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

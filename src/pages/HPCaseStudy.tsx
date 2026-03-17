@@ -40,6 +40,8 @@ const HPCaseStudy = () => {
                     team="HP AI Design Team"
                     heroImage={hpHero}
                     accentColor="from-blue-600/90 to-blue-800/80"
+                    presentationRoute="/hp-presentation"
+                    modalThemeColor="#2563eb"
                 />
 
                 {/* Project Overview / Intro Section */}

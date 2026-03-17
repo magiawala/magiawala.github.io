@@ -42,6 +42,8 @@ const VerizonCaseStudy = () => {
           team="Verizon SMB team"
           heroImage={heroVerizon}
           accentColor="from-red-600/90 to-red-800/80" // Verizon Red-ish
+          presentationRoute="/verizon-presentation"
+          modalThemeColor="#dc2626"
         />
 
         {/* Project Overview / Intro Section */}

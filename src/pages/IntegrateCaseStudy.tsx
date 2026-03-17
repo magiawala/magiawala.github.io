@@ -30,6 +30,8 @@ const IntegrateCaseStudy = () => {
                     team="2 Designers, 2 PM, 2 Engineers"
                     accentColor="from-[#001C3E]/90 to-[#001C3E]/80"
                     rightImage={integrateHero}
+                    presentationRoute="/integrate-presentation"
+                    modalThemeColor="#001C3E"
                 />
 
                 {/* Project Overview / Intro Section */}

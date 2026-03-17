@@ -47,6 +47,8 @@ const NuanceoCaseStudy = () => {
                     heroImage={nuanceoHeroVenice}
                     accentColor="from-black/60 to-black/40"
                     imageClassName="scale-x-[-1]"
+                    presentationRoute="/nuanceo-presentation"
+                    modalThemeColor="#000000"
                 />
 
                 {/* Project Overview / Intro Section */}

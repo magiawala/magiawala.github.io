@@ -1,3 +1,7 @@
+import { useState } from "react";
+import PresentationModal from "./PresentationModal";
+import { MonitorPlay } from "lucide-react";
+
 interface CaseStudyHeroProps {
   title: string;
   subtitle: string;
@@ -12,6 +16,8 @@ interface CaseStudyHeroProps {
   imageFit?: "cover" | "contain" | "fill";
   rightImage?: string;
   rightImageClassName?: string;
+  presentationRoute?: string;
+  modalThemeColor?: string;
 }
 
 const CaseStudyHero = ({
@@ -28,7 +34,11 @@ const CaseStudyHero = ({
   imageFit = "cover",
   rightImage,
   rightImageClassName = "",
+  presentationRoute,
+  modalThemeColor,
 }: CaseStudyHeroProps) => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   return (
     <section
       className="w-full min-h-screen flex items-end pt-16"
@@ -118,6 +128,26 @@ const CaseStudyHero = ({
           </div>
         </div>
       </div>
+
+      {/* Presentation Elements */}
+      {presentationRoute && (
+        <>
+          <button
+            onClick={() => setIsModalOpen(true)}
+            className="absolute bottom-24 right-8 z-[30] p-3 text-white/50 hover:text-white transition-all duration-300 hover:scale-110"
+            aria-label="View Project Presentation"
+          >
+            <MonitorPlay className="w-6 h-6" />
+          </button>
+          
+          <PresentationModal
+            isOpen={isModalOpen}
+            onClose={() => setIsModalOpen(false)}
+            targetRoute={presentationRoute}
+            themeColor={modalThemeColor}
+          />
+        </>
+      )}
     </section>
 
   );
