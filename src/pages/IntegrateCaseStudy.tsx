@@ -216,7 +216,7 @@ const IntegrateCaseStudy = () => {
                         </div>
 
                         <div>
-                            <h3 className="subsection-title mb-4">2. "Course Notation" Learning (Iteration 3)</h3>
+                            <h3 className="subsection-title mb-4">2. "Course Notation" Learning</h3>
                             <p className="body-text mb-4">
                                 I transitioned the product from a text-heavy library to a focused video learning environment.
                             </p>
