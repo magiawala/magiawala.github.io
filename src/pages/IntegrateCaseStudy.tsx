@@ -140,7 +140,7 @@ const IntegrateCaseStudy = () => {
                         <div className="p-6 bg-gray-50 rounded-xl">
                             <p className="body-text">
                                 {/* <span className="font-bold text-blue-600 block mb-2 text-3xl">70%</span> */}
-                                Faster content deployment for the Founder through an intuitive, custom CMS.
+                                Faster content deployment for the admin through an intuitive, custom CMS.
                             </p>
                         </div>
 
