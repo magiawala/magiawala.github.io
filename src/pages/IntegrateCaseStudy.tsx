@@ -88,13 +88,13 @@ const IntegrateCaseStudy = () => {
                         <div>
                             <h4 className="font-bold text-foreground text-xl mb-2">Onboarding Friction</h4>
                             <p className="body-text">
-                                A 6-page, 10-question survey served as an extensive entry barrier. The length and depth of the initial intake caused significant Day 1 churn before users reached the actual content.
+                                A 6-page, 10-question survey served as an extensive entry barrier. The length and depth of the initial intake caused users more time to reach the actual content.
                             </p>
                         </div>
                         <div>
                             <h4 className="font-bold text-foreground text-xl mb-2">High Visual Density</h4>
                             <p className="body-text">
-                                Lectures were primarily text-based, resembling a textbook. For users seeking mental health support, navigating dense walls of text created high cognitive load and felt impersonal.
+                                Lectures were primarily text-based. For users seeking mental health support, navigating dense text created high cognitive load and felt impersonal.
                             </p>
                         </div>
                         <div>
