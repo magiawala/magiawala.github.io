@@ -60,7 +60,7 @@ const IntegrateCaseStudy = () => {
                 <div id="case-study-context">
                     <CaseStudySection title="Context">
                         <p className="body-text mb-6">
-                            Integrate is a self-therapy startup providing high-quality clinical content for BPD and C-PTSD. While the therapy was scientifically sound, the initial delivery method was a barrier to engagement. The platform faced a 65% dropout rate because the interface felt more like an administrative database than a supportive wellness space.
+                            Integrate is a self-therapy startup providing high-quality clinical content for BPD and C-PTSD.The platform’s interface felt more like an administrative database than a supportive wellness space, making it difficult for users to feel engaged and comfortable navigating the experience.
                         </p>
                         <p className="body-text">
                             My goal was to transform this functional foundation into a calming, high-retention consumer product.
@@ -123,7 +123,7 @@ const IntegrateCaseStudy = () => {
                         {/* Metric 1 */}
                         <div className="p-6 bg-gray-50 rounded-xl">
                             <p className="body-text">
-                                <span className="font-bold text-blue-600 block mb-2 text-3xl">45%</span>
+                                {/* <span className="font-bold text-blue-600 block mb-2 text-3xl"></span> */}
                                 Increase in onboarding completion by streamlining a guided flow.
                             </p>
                         </div>
@@ -131,15 +131,15 @@ const IntegrateCaseStudy = () => {
                         {/* Metric 2 */}
                         <div className="p-6 bg-gray-50 rounded-xl">
                             <p className="body-text">
-                                <span className="font-bold text-blue-600 block mb-2 text-3xl">30%</span>
-                                Reduction in user churn by transitioning from text-dense modules to a video-led experience.
+                                {/* <span className="font-bold text-blue-600 block mb-2 text-3xl">30%</span> */}
+                                Reduction in tasktime due to a video-led experience.
                             </p>
                         </div>
 
                         {/* Metric 3 */}
                         <div className="p-6 bg-gray-50 rounded-xl">
                             <p className="body-text">
-                                <span className="font-bold text-blue-600 block mb-2 text-3xl">70%</span>
+                                {/* <span className="font-bold text-blue-600 block mb-2 text-3xl">70%</span> */}
                                 Faster content deployment for the Founder through an intuitive, custom CMS.
                             </p>
                         </div>
